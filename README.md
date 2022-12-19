@@ -48,7 +48,7 @@ The application can be viewed at - http://localhost:5173/
 You can also skip the introduction and start the tutorial directly here - http://localhost:5173/#/building-a-todo-dapp/getting-started
 
 ### Roadmap
-- [ ] Introduction
+- [x] Introduction
 - [x] Part 1 - Building a Todo App
 - [ ] Part 1 - Edit todo item 
 - [ ] Part 2 - Sharing & Interoperability
