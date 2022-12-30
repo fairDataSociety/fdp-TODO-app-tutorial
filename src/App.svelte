@@ -13,9 +13,9 @@
   const routes = {
     "/" : Introduction,
     "/building-a-todo-dapp/introduction" : Introduction,
-    "/building-a-todo-dapp/getting-started" : Part_1,
-    "/building-a-todo-dapp/sharing-and-interoperability" : Part_2,
-    "/building-a-todo-dapp/beyond-fdp-play": Part_3
+    "/building-a-todo-dapp/fdp-storage" : Part_1,
+    "/building-a-todo-dapp/fairos" : Part_2,
+    "/building-a-todo-dapp/resources": Part_3
   }
   onMount(() => {
     url = window.location.href;
