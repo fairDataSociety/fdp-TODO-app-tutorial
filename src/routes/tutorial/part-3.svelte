@@ -1,7 +1,7 @@
 <script>
 
 let links = {
-  "Tutorial - Getting Started with FDP": "https://github.com/fairDataSociety/fdp-storage-tutorial",
+  "Tutorial - Getting Started with FDP (FDP Storage & FairOS)": "https://github.com/fairDataSociety/fdp-storage-tutorial",
   "Todos App Example (using FDP Storage)": "https://github.com/fairDataSociety/fdp-storage-todos",
   "Todos App Example (using FairOS REST APIs)": "https://github.com/fairDataSociety/fairos-todos-example",
   // "FDP Play": "https://github.com/fairDataSociety/fdp-play",
