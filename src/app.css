@@ -49,3 +49,10 @@ dd a {
 a[role=button]:visited {
   color: var(--bg);
 }
+.error{
+  background:pink;
+  padding:1rem;
+}
+input{
+  width:100%;
+}

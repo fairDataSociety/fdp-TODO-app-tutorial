@@ -1,10 +1,9 @@
-import { TODOS_NS, TODO_ITEMS_DIR } from "./config"
+import { config } from "./config"
 
 
 export const getAccountBalancesCode =
 `import type { FdpStorage } from "@fairdatasociety/fdp-storage";
 import { utils } from "ethers";
-import { batchId } from "./store";
 
 ...
 
@@ -35,32 +34,32 @@ $sharedPods = $podList.getSharedPods();
 console.log({pods:$pods,sharedPods:$sharedPods});`
 
 export const createAppPodCode = 
-`const appPod = await fdp.personalStorage.create("${TODOS_NS}");
+`const appPod = await fdp.personalStorage.create("${config.todoAppNamespace}");
 console.log({appPod});
 `
 
 export const createTodoItemsDirectoryCode = 
-`fdp.directory.create("${TODOS_NS}", "${TODO_ITEMS_DIR}").then(()=>{
-  console.log('Directory "${TODO_ITEMS_DIR}" has been created in "${TODOS_NS}" pod');
+`fdp.directory.create("${config.todoAppNamespace}", "${config.todoItemsDirectory}").then(()=>{
+  console.log('Directory "${config.todoItemsDirectory}" has been created in "${config.todoAppNamespace}" pod');
 });`
 
 export const createTodoItemCode = 
 `const todoId = new Date().getTime();
 const uploadedTodoMetadata = await fdp.file.uploadData(
-  "${TODOS_NS}", 
-  "${TODO_ITEMS_DIR}/todo_" + todoId + ".json", 
+  "${config.todoAppNamespace}", 
+  "${config.todoItemsDirectory}/todo_" + todoId + ".json", 
   JSON.stringify({id: todoId, text:"Learn Fair Data Protocol!",done:false})
 );
 console.log({uploadedTodoMetadata});
 `
 
 export const listTodoItemsCode =
-`const dir =  await fdp.directory.read("${TODOS_NS}", "${TODO_ITEMS_DIR}");
+`const dir =  await fdp.directory.read("${config.todoAppNamespace}", "${config.todoItemsDirectory}");
 let todoItems = [];
 dir.content.map(async (file:ContentItem) => {
   const todo = await fdp.file.downloadData(
-    "${TODOS_NS}", 
-    "${TODO_ITEMS_DIR}/"+ file.name 
+    "${config.todoAppNamespace}", 
+    "${config.todoItemsDirectory}/"+ file.name 
   );
   todoItems.push(todo);
 });
@@ -69,8 +68,8 @@ console.log({dir, content:dir.content, todoItems});
 
 export const updateTodoCode = 
 `fdp.file.delete(
-  "${TODOS_NS}", 
-  "${TODO_ITEMS_DIR}/todo_xxxxx.json"
+  "${config.todoAppNamespace}", 
+  "${config.todoItemsDirectory}/todo_xxxxx.json"
   ).then(()=>{
     console.log("Todo deleted!")
   })
