@@ -50,18 +50,17 @@ You can also skip the introduction and start the tutorial directly here - http:/
 ### Roadmap
 - [x] Introduction
 - [x] Part 1 - Building a Todo App
-- [ ] Part 1 - Edit todo item 
-- [ ] Part 2 - Sharing & Interoperability
-- [ ] Getting started with FairOS
-- [ ] migrate to [kit-docs](https://github.com/svelteness/kit-docs) or [docusaurus](https://docusaurus.io/)
+- [x] Getting started with FairOS
+- [x] Resources & Links
+- [ ] Make todos editable
 
 ### Screenshots
 
-![image](https://user-images.githubusercontent.com/520570/207879247-8911b177-1331-42ed-ad9e-e077b9148f2e.png)
+![image](https://user-images.githubusercontent.com/520570/210038808-d84ed496-ec43-4be2-bca3-362c7d49c15f.png)
 
 ---
 
-![image](https://user-images.githubusercontent.com/520570/207879702-e3a5335b-beb8-4c42-b118-a7853fde28b3.png)
+![image](https://user-images.githubusercontent.com/520570/210038865-cb215262-98be-40f4-ac0e-8726dafb1423.png)
 
 ---
 
