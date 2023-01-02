@@ -84,24 +84,22 @@
   <p />
   <div class="notice">
     <dl>
-      <dt>Steps:</dt>
+      <dt>FairOS Steps:</dt>
       <dd>
         <ol>
           <li>
-            Create an FdpStorage Instance
-            <ul><li>List accounts and balances</li></ul>
+            Register an account on-chain <code>v2/user/signup</code>
           </li>
           <li>
-            Create an FDP wallet
-            <ul><li>Save mnemonic phrase</li></ul>
+            Login to a portable account
           </li>
-          <li>List existing pods</li>
-          <li>Create app pod</li>
-          <li>Create a directory</li>
+          <li>Create App Pod</li>
+          <li>Open App Pod</li>
+          <li>Create App Directory</li>
           <li>Create a todo item (as a file)</li>
-          <li>List all todo items</li>
-          <li>Deleting a todo</li>
-          <li>Importing a wallet</li>
+          <li>List Todo Files</li>
+          <li>Read Todo Item</li>
+          <li>Delete Todo</li>
           <li>Next Steps</li>
         </ol>
       </dd>
