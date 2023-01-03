@@ -14,7 +14,7 @@
         <a href="https://github.com/fairDataSociety/fdp-play"
           ><code>fdp-play</code></a
         > : a command line tool to spin up a local development fdp environment with
-        docker. It includes a cluster of bees a fair OS instance and a blockchain
+        docker. It includes a cluster of bees, a FairOS instance and a blockchain
         node which is all you need to experiment with the stack
       </dd>
       <dt>FDP Storage</dt>
