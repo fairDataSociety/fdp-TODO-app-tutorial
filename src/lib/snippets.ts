@@ -79,5 +79,6 @@ export const importWalletCode =
 if (phrase) {
   // set account from mnemonic
   fdp.account.setAccountFromMnemonic(phrase.trim());
-  console.log({ importedWallet:$wallet });
+  let importedWallet = fdp.account.wallet;
+  console.log({ importedWallet });
 }`

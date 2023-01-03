@@ -93,10 +93,12 @@
     <dt>Clone the tutorial locally</dt>
     <dd>
       Open a new terminal and run:
-      <pre>git clone https://github.com/rampall/getting-started-with-fdp</pre>
+      <pre>git clone https://github.com/fairDataSociety/fdp-storage-TODO-app-tutorial</pre>
     </dd>
     <dt>Switch to the project directory</dt>
     <dd><pre>cd getting-started-with-fdp</pre></dd>
+    <dt>Copy .env file</dt>
+    <dd><pre>cp .env.example .env</pre></dd>
     <dt>Install dependencies</dt>
     <dd><pre>npm install</pre></dd>
     <dt>Run the tutorial app</dt>

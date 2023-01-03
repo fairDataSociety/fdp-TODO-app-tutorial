@@ -83,7 +83,7 @@ if(response.ok){
       action = "Registering...";
       topped = true;
       console.log("Topped address", error.address, $mnemonic);
-      console.log("Registering FairOS Account...");
+      console.log("Registering FDS Account...");
       registerUser().then(() => {
         console.log("Finished Registering");
         $steps[1] = true;
@@ -117,7 +117,7 @@ if(response.ok){
     <RunButton
       step="1"
       handler={registerUser}
-      actionText="Register FairOS Account"
+      actionText="Register FDS Account"
     />
   {/if}
 </section>

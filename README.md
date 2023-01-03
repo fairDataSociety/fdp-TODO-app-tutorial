@@ -2,8 +2,9 @@
 
 An interactive how-to guide for beginners on getting started with building dApps on Fair Data Protocol using `fdp-storage` and `fdp-play`.
 
-An independent example of a todos application built using the steps described in this tutorial can be found here:
-- https://github.com/fairDataSociety/fdp-storage-todos
+Independent Todo apps built using the two approaches described in this tutorial:
+- https://github.com/fairDataSociety/fdp-storage-TODO-app-example
+- https://github.com/fairDataSociety/fairos-TODO-app-example
 
 ## Local Development Setup
 
@@ -25,7 +26,7 @@ $ fdp-play start --fairos
 
 #### Clone the repo
 ```shell
-$ git clone https://github.com/fairDataSociety/fdp-storage-TODO-app-tutorial
+$ git clone https://github.com/fairDataSociety/fdp-TODO-app-tutorial
 ```
 
 ```shell

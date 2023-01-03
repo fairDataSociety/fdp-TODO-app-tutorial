@@ -34,7 +34,7 @@ console.log({fdp});
         Install <a
           href="https://github.com/fairDataSociety/fdp-storage/"
           target="_blank"
-          rel="noreferrer">FDP Storage</a
+          rel="noreferrer">fdp-storage</a
         >
       </dt>
       <dd><pre>npm install @fairdatasociety/fdp-storage</pre></dd>
@@ -43,19 +43,19 @@ console.log({fdp});
         To generate a Batch Id, open a terminal with <code>curl</code> installed
         and run:
         <pre>curl -s -XPOST http://localhost:1635/stamps/10000000/18</pre>
-        This should return a new batch Id that looks like this:
+        This should return a new Batch Id that looks like this:
         <p>
           <img alt="" src="images/newbatchid.png" />
         </p>
         {#if $tutorialMode == TutorialMode.FDP_INTERACTIVE}
-          <label for="batchid">Copy the batch id and enter it here:</label>
+          <label for="batchid">Copy the Batch Id and enter it here:</label>
           <input
             id="batchid"
             name="batchid"
             style="width:100%;"
             type="text"
             bind:value={$batchId}
-            placeholder="Enter a valid batch id here"
+            placeholder="Enter a valid Batch Id here"
           />
           {#if !($batchId != "" && $batchId.length == 64)}
             <mark>❌ Batch Id Missing or Invalid!</mark>
@@ -63,7 +63,7 @@ console.log({fdp});
         {/if}
       </dd>
       <dt>
-        Import Fdp Storage in your project file and create a new instance.
+        Import FdpStorage in your project file and create a new instance.
       </dt>
       <dd>
         <Code source={initCode} />
@@ -71,7 +71,7 @@ console.log({fdp});
           disabled={$batchId == "" || $steps[1]}
           step="1"
           handler={init}
-          actionText="Create an fdpStorage instance"
+          actionText="Create an FdpStorage instance"
         />
       </dd>
     </dl>
