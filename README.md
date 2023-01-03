@@ -26,16 +26,16 @@ $ fdp-play start --fairos
 
 #### Clone the repo
 ```shell
-$ git clone https://github.com/fairDataSociety/fdp-TODO-app-tutorial
+$ git clone https://github.com/fairDataSociety/fdp-TODO-app-tutorial.git
 ```
 
 ```shell
-$ cd getting-started-with-fdp/
+$ cd fdp-TODO-app-tutorial
 ```
 
 ### Install dependencies
 ```shell
-$ npm i
+$ npm install
 ```
 
 ### Run application
@@ -47,13 +47,6 @@ $ npm run dev
 
 The application can be viewed at - http://localhost:5173/ 
 You can also skip the introduction and start the tutorial directly here - http://localhost:5173/#/building-a-todo-dapp/getting-started
-
-### Roadmap
-- [x] Introduction
-- [x] Part 1 - Building a Todo App
-- [x] Getting started with FairOS
-- [x] Resources & Links
-- [ ] Make todos editable
 
 ### Screenshots
 
