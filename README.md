@@ -25,7 +25,7 @@ $ fdp-play start --fairos
 
 #### Clone the repo
 ```shell
-$ git clone https://github.com/rampall/getting-started-with-fdp.git
+$ git clone https://github.com/fairDataSociety/fdp-storage-TODO-app-tutorial
 ```
 
 ```shell
@@ -41,7 +41,7 @@ $ npm i
 **Requirements:** `fdp-play` must be running already! 
 
 ```shell
-$ npm dev
+$ npm run dev
 ```
 
 The application can be viewed at - http://localhost:5173/ 
