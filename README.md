@@ -46,7 +46,6 @@ $ npm run dev
 ```
 
 The application can be viewed at - http://localhost:5173/ 
-You can also skip the introduction and start the tutorial directly here - http://localhost:5173/#/building-a-todo-dapp/getting-started
 
 ### Screenshots
 
