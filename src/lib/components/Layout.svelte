@@ -2,7 +2,7 @@
   import { link, location } from "svelte-spa-router";
   const pages = {
     "/building-a-todo-dapp/introduction": "Getting Started",
-    "/building-a-todo-dapp/fdp-storage": "FDP Storage",
+    "/building-a-todo-dapp/fdp-storage": "FdpStorage",
     "/building-a-todo-dapp/fairos": "FairOS Endpoints",
     "/building-a-todo-dapp/resources": "Resources & Links",
   };

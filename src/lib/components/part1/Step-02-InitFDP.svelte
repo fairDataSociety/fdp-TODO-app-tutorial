@@ -38,30 +38,32 @@ console.log({fdp});
         >
       </dt>
       <dd><pre>npm install @fairdatasociety/fdp-storage</pre></dd>
-      <dt>Get a valid Batch Id:</dt>
+      <dt>Get a valid <code>batchId</code>:</dt>
       <dd>
-        To generate a Batch Id, open a terminal with <code>curl</code> installed
+        To generate a batchId, open a terminal with <code>curl</code> installed
         and run:
         <pre>curl -s -XPOST http://localhost:1635/stamps/10000000/18</pre>
-        This should return a new Batch Id that looks like this:
+        This should return a new <code>batchId</code> that looks like this:
         <p>
           <img alt="" src="images/newbatchid.png" />
         </p>
         {#if $tutorialMode == TutorialMode.FDP_INTERACTIVE}
-          <label for="batchid">Copy the Batch Id and enter it here:</label>
+          <label for="batchid">Copy the <code>batchId</code> and enter it here:</label>
           <input
             id="batchid"
             name="batchid"
             style="width:100%;"
             type="text"
             bind:value={$batchId}
-            placeholder="Enter a valid Batch Id here"
+            placeholder="Enter a valid batchId here"
           />
           {#if !($batchId != "" && $batchId.length == 64)}
-            <mark>❌ Batch Id Missing or Invalid!</mark>
+            <mark>❌ <code>batchId</code> Missing or Invalid!</mark>
           {/if}
         {/if}
       </dd>
+      <!-- <dt>Topup the <code>batchId</code></dt>
+      <dd><pre>curl -s -XPATCH http://localhost:1635/stamps/topup/{$batchId}/1</pre></dd> -->
       <dt>
         Import FdpStorage in your project file and create a new instance.
       </dt>

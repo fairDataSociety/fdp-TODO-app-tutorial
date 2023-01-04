@@ -28,8 +28,8 @@
   <strong>A Quick Checklist:</strong>
   <ul>
     <li>
-      {#if $isLocalSetup}✅{:else}❌{/if} This page is being served locally -
-      <b>{window.location.href.split("/")[2]}</b>
+      {#if $isLocalSetup}✅{:else}❌{/if} This page is being served locally at 
+      <a href="http://{window.location.href.split("/")[2]}">http://{window.location.href.split("/")[2]}</a>
     </li>
     <li>
       {#if $isBeeRunning}✅{:else}❌{/if} Local bee node is running at

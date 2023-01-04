@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fairdatasociety/fdp-storage': github:fairDataSociety/fdp-storage#fix/bee-js-762
+  '@fairdatasociety/fdp-storage': ^0.6.0
   '@sveltejs/vite-plugin-svelte': ^1.1.0
   '@tsconfig/svelte': ^3.0.0
   ethers: ^5.7.2
@@ -20,7 +20,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
-  '@fairdatasociety/fdp-storage': github.com/fairDataSociety/fdp-storage/c79d5a2e63a8e31f77d0fd45eb30232f6f3b54e5
+  '@fairdatasociety/fdp-storage': 0.6.0
   ethers: 5.7.2
   file-saver: 2.0.5
   prismjs: 1.29.0
@@ -60,11 +60,25 @@ packages:
     dev: true
     optional: true
 
-  /@ethersphere/swarm-cid/0.1.0:
-    resolution: {integrity: sha512-n+n+w5RJBPm7CiPf8TIgNFIRMo4bLh5bYpZxHObgCaxFW8WNZ4UGfqg+qjS/jEr+A3Mmp0lugKDvd8GnfFy7JQ==}
-    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
+  /@ethersphere/bee-js/3.3.4:
+    resolution: {integrity: sha512-uxH0kR31tE8IKVON7jyQHANZ/5edlU8OUCz/qyRft1YeS+L4HzEHAD3bN58iE842nt6Iz/fekrJ7yk1ONIcDBg==}
+    engines: {bee: 1.5.1-d0a77598, beeApiVersion: 3.0.0, beeDebugApiVersion: 2.0.0, node: '>=12.0.0', npm: '>=6.0.0'}
     dependencies:
-      multiformats: 9.9.0
+      '@types/readable-stream': 2.3.15
+      bufferutil: 4.0.7
+      elliptic: 6.5.4
+      fetch-blob: 2.1.2
+      isomorphic-ws: 4.0.1_ws@8.11.0
+      js-sha3: 0.8.0
+      ky: 0.25.1
+      ky-universal: 0.8.2_vsorj6lelkqnewvpxlagu25q6e
+      semver: 7.3.8
+      tar-js: 0.3.0
+      utf-8-validate: 5.0.10
+      web-streams-polyfill: 4.0.0-beta.3
+      ws: 8.11.0_3cxu5zja4e2r5wmvge7mdcljwq
+    transitivePeerDependencies:
+      - domexception
     dev: false
 
   /@ethersproject/abi/5.7.0:
@@ -390,6 +404,21 @@ packages:
       ethers: 5.7.2
     dev: false
 
+  /@fairdatasociety/fdp-storage/0.6.0:
+    resolution: {integrity: sha512-Ahauyulq776CPJGCd0QEGei0R63Ym70Nf20XeGv1eKmpcisU9pectshHVudvPBQ5Lz2abauuXttVPfBMhFiIvw==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+    dependencies:
+      '@ethersphere/bee-js': 3.3.4
+      '@fairdatasociety/fdp-contracts': 1.0.4_ethers@5.7.2
+      crypto-js: 4.1.1
+      ethers: 5.7.2
+      js-sha3: 0.8.0
+    transitivePeerDependencies:
+      - bufferutil
+      - domexception
+      - utf-8-validate
+    dev: false
+
   /@jridgewell/resolve-uri/3.1.0:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
     engines: {node: '>=6.0.0'}
@@ -566,6 +595,11 @@ packages:
 
   /crypto-js/4.1.1:
     resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+    dev: false
+
+  /data-uri-to-buffer/3.0.1:
+    resolution: {integrity: sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==}
+    engines: {node: '>= 6'}
     dev: false
 
   /data-uri-to-buffer/4.0.0:
@@ -1047,22 +1081,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /ky-universal/0.10.1_bsk5lsnhwckor65woe7yrgjmoq:
-    resolution: {integrity: sha512-r8909k+ELKZAxhVA5c440x22hqw5XcMRwLRbgpPQk4JHy3/ddJnvzcnSo5Ww3HdKdNeS3Y8dBgcIYyVahMa46g==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      ky: '>=0.26.0'
-      web-streams-polyfill: '>=3.0.1'
-    peerDependenciesMeta:
-      web-streams-polyfill:
-        optional: true
-    dependencies:
-      abort-controller: 3.0.0
-      ky: 0.31.4
-      node-fetch: 3.3.0
-      web-streams-polyfill: 3.2.1
-    dev: false
-
   /ky-universal/0.10.1_ky@0.27.0:
     resolution: {integrity: sha512-r8909k+ELKZAxhVA5c440x22hqw5XcMRwLRbgpPQk4JHy3/ddJnvzcnSo5Ww3HdKdNeS3Y8dBgcIYyVahMa46g==}
     engines: {node: '>=14'}
@@ -1078,14 +1096,32 @@ packages:
       node-fetch: 3.3.0
     dev: false
 
+  /ky-universal/0.8.2_vsorj6lelkqnewvpxlagu25q6e:
+    resolution: {integrity: sha512-xe0JaOH9QeYxdyGLnzUOVGK4Z6FGvDVzcXFTdrYA1f33MZdEa45sUDaMBy98xQMcsd2XIBrTXRrRYnegcSdgVQ==}
+    engines: {node: '>=10.17'}
+    peerDependencies:
+      ky: '>=0.17.0'
+      web-streams-polyfill: '>=2.0.0'
+    peerDependenciesMeta:
+      web-streams-polyfill:
+        optional: true
+    dependencies:
+      abort-controller: 3.0.0
+      ky: 0.25.1
+      node-fetch: 3.0.0-beta.9
+      web-streams-polyfill: 4.0.0-beta.3
+    transitivePeerDependencies:
+      - domexception
+    dev: false
+
+  /ky/0.25.1:
+    resolution: {integrity: sha512-PjpCEWlIU7VpiMVrTwssahkYXX1by6NCT0fhTUX34F3DTinARlgMpriuroolugFPcMgpPWrOW4mTb984Qm1RXA==}
+    engines: {node: '>=10'}
+    dev: false
+
   /ky/0.27.0:
     resolution: {integrity: sha512-pgaBuB6wI9DdMSOZBVh2WkcbkAdEG5AUEWuNhtThu6FLIpDbzqzC/fSMmqr/j1wwQyW3SP3KGau7EbzWNkQ/yg==}
     engines: {node: '>=12'}
-    dev: false
-
-  /ky/0.31.4:
-    resolution: {integrity: sha512-OFuAD3riwhAfHK3J4FrhlujFRpm0ELBEfDHZfFpw89OTozQt3NLF39lNblUO5udj5vSkyaBKnLai/rFCzBfISQ==}
-    engines: {node: '>=14.16'}
     dev: false
 
   /lru-cache/6.0.0:
@@ -1160,10 +1196,6 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /multiformats/9.9.0:
-    resolution: {integrity: sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==}
-    dev: false
-
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1173,6 +1205,16 @@ packages:
   /node-domexception/1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    dev: false
+
+  /node-fetch/3.0.0-beta.9:
+    resolution: {integrity: sha512-RdbZCEynH2tH46+tj0ua9caUHVWrd/RHnRfvly2EVdqGmI3ndS1Vn/xjm5KuGejDt2RNDQsVRLPNd2QPwcewVg==}
+    engines: {node: ^10.17 || >=12.3}
+    dependencies:
+      data-uri-to-buffer: 3.0.1
+      fetch-blob: 2.1.2
+    transitivePeerDependencies:
+      - domexception
     dev: false
 
   /node-fetch/3.3.0:
@@ -1566,6 +1608,11 @@ packages:
     engines: {node: '>= 8'}
     dev: false
 
+  /web-streams-polyfill/4.0.0-beta.3:
+    resolution: {integrity: sha512-QW95TCTaHmsYfHDybGMwO5IJIM93I/6vTRk+daHTWFPhwh+C8Cg7j7XyKrwrj8Ib6vYXe0ocYNrmzY4xAAN6ug==}
+    engines: {node: '>= 14'}
+    dev: false
+
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
@@ -1601,49 +1648,4 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: false
-
-  github.com/fairDataSociety/bee-js/047a1b90be6b87bc94b73bbd24fb8d3de179979b:
-    resolution: {tarball: https://codeload.github.com/fairDataSociety/bee-js/tar.gz/047a1b90be6b87bc94b73bbd24fb8d3de179979b}
-    name: '@ethersphere/bee-js'
-    version: 5.0.0
-    engines: {bee: 1.7.0-bbf13011, beeApiVersion: 3.0.2, beeDebugApiVersion: 3.0.2, node: '>=14.0.0', npm: '>=6.0.0'}
-    prepare: true
-    requiresBuild: true
-    dependencies:
-      '@ethersphere/swarm-cid': 0.1.0
-      '@types/readable-stream': 2.3.15
-      bufferutil: 4.0.7
-      elliptic: 6.5.4
-      fetch-blob: 2.1.2
-      isomorphic-ws: 4.0.1_ws@8.11.0
-      js-sha3: 0.8.0
-      ky: 0.31.4
-      ky-universal: 0.10.1_bsk5lsnhwckor65woe7yrgjmoq
-      semver: 7.3.8
-      tar-js: 0.3.0
-      utf-8-validate: 5.0.10
-      web-streams-polyfill: 3.2.1
-      ws: 8.11.0_3cxu5zja4e2r5wmvge7mdcljwq
-    transitivePeerDependencies:
-      - domexception
-    dev: false
-
-  github.com/fairDataSociety/fdp-storage/c79d5a2e63a8e31f77d0fd45eb30232f6f3b54e5:
-    resolution: {tarball: https://codeload.github.com/fairDataSociety/fdp-storage/tar.gz/c79d5a2e63a8e31f77d0fd45eb30232f6f3b54e5}
-    name: '@fairdatasociety/fdp-storage'
-    version: 0.5.1
-    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
-    prepare: true
-    requiresBuild: true
-    dependencies:
-      '@ethersphere/bee-js': github.com/fairDataSociety/bee-js/047a1b90be6b87bc94b73bbd24fb8d3de179979b
-      '@fairdatasociety/fdp-contracts': 1.0.4_ethers@5.7.2
-      crypto-js: 4.1.1
-      ethers: 5.7.2
-      js-sha3: 0.8.0
-    transitivePeerDependencies:
-      - bufferutil
-      - domexception
-      - utf-8-validate
     dev: false

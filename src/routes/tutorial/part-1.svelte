@@ -54,7 +54,7 @@
   });
 </script>
 
-<h1>FDP Storage</h1>
+<h1>FdpStorage</h1>
 <Step_00_Setup />
 <Step_02_InitFDP />
 {#if $next[1]}

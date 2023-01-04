@@ -17,7 +17,7 @@
         docker. It includes a cluster of bees, a FairOS instance and a blockchain
         node which is all you need to experiment with the stack
       </dd>
-      <dt>FDP Storage</dt>
+      <dt>FdpStorage</dt>
       <dd>
         <a href="https://github.com/fairDataSociety/fdp-storage"
           ><code>fdp-storage</code></a
@@ -93,10 +93,10 @@
     <dt>Clone the tutorial locally</dt>
     <dd>
       Open a new terminal and run:
-      <pre>git clone https://github.com/fairDataSociety/fdp-storage-TODO-app-tutorial</pre>
+      <pre>git clone https://github.com/fairDataSociety/fdp-TODO-app-tutorial</pre>
     </dd>
     <dt>Switch to the project directory</dt>
-    <dd><pre>cd getting-started-with-fdp</pre></dd>
+    <dd><pre>cd fdp-TODO-app-tutorial</pre></dd>
     <dt>Copy .env file</dt>
     <dd><pre>cp .env.example .env</pre></dd>
     <dt>Install dependencies</dt>
@@ -105,12 +105,21 @@
     <dd><pre>npm run dev</pre></dd>
     <dt>Open the tutorial app</dt>
     <dd>
-      Visit the link - <a href="http://localhost:5173/"
-        >http://localhost:5173/</a
+      Visit the link - <a href={$url}
+        >{$url}</a
       >
     </dd>
   </dl>
 </section>
 <a href="#/building-a-todo-dapp/fdp-storage" role="button"
-  >Next: Part 1: Getting Started</a
+  >Next: FdpStorage</a
 >
+<script lang="ts">
+  import { onMount } from "svelte";
+  import { writable } from "svelte/store";
+
+  let url = writable("");
+  onMount(()=>{
+    $url = window.location.origin;
+  })
+</script>
