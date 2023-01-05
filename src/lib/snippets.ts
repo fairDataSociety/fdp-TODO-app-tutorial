@@ -23,8 +23,11 @@ console.log({wallet:fdp.account.wallet})
 `
 
 export const createWalletCode = 
-`fdp.account.createWallet();
-console.log({wallet:fdp.account.wallet});
+`// 1. create wallet
+let wallet = fdp.account.createWallet();
+// 2. set account from wallet phrase
+fdp.account.setAccountFromMnemonic(wallet.mnemonic.phrase);
+console.log({wallet:fdp.account.wallet,account:fdp.account});
 `
 
 export const listPodsCode = 

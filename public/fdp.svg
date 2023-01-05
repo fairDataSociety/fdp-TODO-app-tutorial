@@ -1,0 +1,160 @@
+<svg version="1.1" baseProfile="full" width="919.0" height="291.0" viewbox="0 0 919 291" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+		<desc >#.box: fill=pink dashed
+	#.fdp: fill=lime dashed
+	#.package: fill=lime
+	#direction: right
+	#gravity: 2
+		[&lt;actor&gt;FDP]
+		[FDP]--&gt;[&lt;package&gt;FdpStorage| Typescript Class]
+		[FDP]--&gt;[&lt;package&gt;FairOS|REST API]
+		[FDP]--&gt;[&lt;package&gt;Blossom|Typescript Class]
+		[Blossom]--&gt;[FdpStorage]
+		
+		[FdpStorage]-&gt;Create / Import[Lite Account|✅ Local]
+		[FairOS]Register / Login-&gt;[FDS Account|✅ Portable]
+		[Lite Account]Register-&gt;[FDS Account]
+		[FdpStorage]Login -&gt;[FDS Account]</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="bold" font-style="normal">
+			<g transform="translate(0.5, 0.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+				<g stroke="transparent" fill="transparent">
+					<rect x="0.0" y="0.0" height="291.0" width="919.0" stroke="none"></rect>
+				</g>
+			<g transform="translate(8, 8)" fill="#33322E">
+					<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+						<g stroke-dasharray="6 6">
+							<path d="M48.0 102.0 L68 102 L88 102 L88 102 L108 102 L108 102 L194.5 102 L194.5 102 L281 102 L281 102 L301 102 L301 102 L321 102 L321 102 L361.89139628923795 133.43673818768005 L361.9 133.4 " fill="none"></path>
+						</g>
+					<path d="M353.4 133.6 L361.9 133.4 L359.9 125.1 L367.2 137.5 Z"></path>
+					<g stroke-dasharray="6 6">
+							<path d="M41.0 74.5 L68 31 L88 31 L88 31 L108 31 L108 31 L194.5 31 L194.5 31 L281 31 L281 31 L301 31 L301 31 L321 31 L321 31 L407.5 31 L407.5 31 L494 31 L494 31 L514 31 L514 31 L534 31 L534 31 L559.3333333333334 31 L559.3 31.0 " fill="none"></path>
+						</g>
+					<path d="M552.7 36.3 L559.3 31.0 L552.7 25.7 L566.0 31.0 Z"></path>
+					<g stroke-dasharray="6 6">
+							<path d="M35.9 129.5 L68 204 L88 204 L88 204 L108 204 L108 204 L121.33333333333333 204 L121.3 204.0 " fill="none"></path>
+						</g>
+					<path d="M114.7 209.3 L121.3 204.0 L114.7 198.7 L128.0 204.0 Z"></path>
+					<g stroke-dasharray="6 6">
+							<path d="M261.0 204.0 L281 204 L301 204 L301 204 L321 204 L321 204 L334.832530251923 198.323065619153 L334.8 198.3 " fill="none"></path>
+						</g>
+					<path d="M330.7 205.8 L334.8 198.3 L326.6 195.9 L341.0 195.8 Z"></path>
+					<text x="433.1" y="125.0" stroke="none">Create / Import</text>
+					<path d="M474.0 141.2 L494 133 L514 133 L514 133 L534 133 L534 133 L547.3333333333334 133 L547.3 133.0 " fill="none"></path>
+					<path d="M540.7 138.3 L547.3 133.0 L540.7 127.7 L554.0 133.0 Z"></path>
+					<text x="663.0" y="23.0" stroke="none">Register / Login</text>
+					<path d="M655.0 31.0 L687 31 L707 31 L707 31 L727 31 L727 31 L777.2444502632535 96.70428111348537 L777.2 96.7 " fill="none"></path>
+					<path d="M769.0 94.6 L777.2 96.7 L777.4 88.2 L781.3 102.0 Z"></path>
+					<text x="675.0" y="153.0" stroke="none">Register</text>
+					<path d="M667.0 133.0 L687 133 L707 133 L707 133 L727 133 L727 133 L740.3333333333334 133 L740.3 133.0 " fill="none"></path>
+					<path d="M733.7 138.3 L740.3 133.0 L733.7 127.7 L747.0 133.0 Z"></path>
+					<text x="422.5" y="215.8" stroke="none">Login</text>
+					<path d="M474.0 195.8 L494 204 L514 204 L514 204 L534 204 L534 204 L610.5 204 L610.5 204 L687 204 L687 204 L707 204 L707 204 L727 204 L727 204 L766.0135891551753 168.4876303843918 L766.0 168.5 " fill="none"></path>
+					<path d="M764.7 176.9 L766.0 168.5 L757.5 169.0 L770.9 164.0 Z"></path>
+					<g data-name="FdpStorage">
+							<g fill="lime" stroke="#33322E" data-name="FdpStorage">
+								<rect x="341.0" y="138.0" height="62.0" width="133.0" data-name="FdpStorage"></rect>
+							<path d="M341.0 169.0 L474.0 169.0" fill="none" data-name="FdpStorage"></path>
+							</g>
+						<g transform="translate(341, 138)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FdpStorage">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FdpStorage">
+									<text x="58.5" y="13.5" stroke="none" text-anchor="middle" data-name="FdpStorage">FdpStorage</text>
+								
+								</g>
+							</g>
+						<g transform="translate(341, 169)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FdpStorage">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FdpStorage">
+									<text x="0.0" y="13.5" stroke="none" data-name="FdpStorage">Typescript Class</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FairOS">
+							<g fill="lime" stroke="#33322E" data-name="FairOS">
+								<rect x="566.0" y="0.0" height="62.0" width="89.0" data-name="FairOS"></rect>
+							<path d="M566.0 31.0 L655.0 31.0" fill="none" data-name="FairOS"></path>
+							</g>
+						<g transform="translate(566, 0)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FairOS">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FairOS">
+									<text x="36.5" y="13.5" stroke="none" text-anchor="middle" data-name="FairOS">FairOS</text>
+								
+								</g>
+							</g>
+						<g transform="translate(566, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FairOS">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FairOS">
+									<text x="0.0" y="13.5" stroke="none" data-name="FairOS">REST API</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="Blossom">
+							<g fill="lime" stroke="#33322E" data-name="Blossom">
+								<rect x="128.0" y="173.0" height="62.0" width="133.0" data-name="Blossom"></rect>
+							<path d="M128.0 204.0 L261.0 204.0" fill="none" data-name="Blossom"></path>
+							</g>
+						<g transform="translate(128, 173)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Blossom">
+									<text x="58.5" y="13.5" stroke="none" text-anchor="middle" data-name="Blossom">Blossom</text>
+								
+								</g>
+							</g>
+						<g transform="translate(128, 204)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Blossom">
+									<text x="0.0" y="13.5" stroke="none" data-name="Blossom">Typescript Class</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="Lite Account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="Lite Account">
+								<rect x="554.0" y="102.0" height="62.0" width="113.0" data-name="Lite Account"></rect>
+							<path d="M554.0 133.0 L667.0 133.0" fill="none" data-name="Lite Account"></path>
+							</g>
+						<g transform="translate(554, 102)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Lite Account">
+									<text x="48.5" y="13.5" stroke="none" text-anchor="middle" data-name="Lite Account">Lite Account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(554, 133)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Lite Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="Lite Account">✅ Local</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FDS Account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="FDS Account">
+								<rect x="747.0" y="102.0" height="62.0" width="116.0" data-name="FDS Account"></rect>
+							<path d="M747.0 133.0 L863.0 133.0" fill="none" data-name="FDS Account"></path>
+							</g>
+						<g transform="translate(747, 102)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="FDS Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FDS Account">
+									<text x="50.0" y="13.5" stroke="none" text-anchor="middle" data-name="FDS Account">FDS Account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(747, 133)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FDS Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FDS Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="FDS Account">✅ Portable</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FDP">
+							<g fill="#eee8d5" stroke="#33322E" data-name="FDP">
+								<circle r="4.0" cx="24.0" cy="87.0" data-name="FDP"></circle>
+							<path d="M24.0 91.0 L24.0 99.0" fill="none" data-name="FDP"></path>
+							<path d="M20.0 95.0 L28.0 95.0" fill="none" data-name="FDP"></path>
+							<path d="M20.0 103.0 L24.0 99.0 L28.0 103.0" fill="none" data-name="FDP"></path>
+							</g>
+						<g transform="translate(0, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FDP">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FDP">
+									<text x="16.0" y="13.5" stroke="none" text-anchor="middle" data-name="FDP">FDP</text>
+								
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>

@@ -18,12 +18,11 @@
     tutorialMode,
     wallet,
   } from "../../lib/store";
-  import { apiHost, scrollToBottom } from "../../lib/utils";
+  import { apiHost, scrollPageToTop, scrollToBottom } from "../../lib/utils";
   const startInteractiveTutorial = () => {
     $tutorialMode = TutorialMode.FDP_INTERACTIVE;
     $steps = {};
     $next = {};
-    scrollToBottom();
   };
   const showFullTutorial = () => {
     $tutorialMode = TutorialMode.FDP_NON_INTERACTIVE;
@@ -36,52 +35,17 @@
     console.log($wallet);
     $API_HOST = apiHost();
     startInteractiveTutorial();
+    scrollPageToTop();
   });
 </script>
 
 <h1>Using FairOS Endpoints</h1>
 <section>
   <p>
-    We can use the REST API endpoints provided at <code
+    We can use the FairOS REST API endpoints provided at <code
       >http://localhost:9090</code
     > by FairOS to accomplish all of the steps covered in the previous page.
   </p>
-  <dl>
-    <dt>FairOS Endpoints:</dt>
-    <dd>
-      <dl>
-        {#each Object.entries(api) as [topic, data]}
-          <dt>{topic}</dt>
-          <dd>
-            <ul>
-              {#each Object.entries(data) as [path, json]}
-                {@const method = json.method == "del" ? "delete" : json.method}
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href={`https://docs.fairos.fairdatasociety.org/api/index.html#tag/${topic}/paths/~1${path.replace(
-                      /\//g,
-                      "~1"
-                    )}/${method}`}
-                  >
-                    <code>
-                      <strong>{method.toUpperCase()}</strong>
-                      {path}
-                    </code>
-                  </a>
-                  : {json.endpoint}
-                </li>
-              {/each}
-            </ul>
-          </dd>
-        {/each}
-      </dl>
-    </dd>
-  </dl>
-</section>
-<section>
-  <p />
   <div class="notice">
     <dl>
       <dt>FairOS Steps:</dt>
@@ -91,15 +55,15 @@
             Register an account on-chain <code>v2/user/signup</code>
           </li>
           <li>
-            Login to a portable account
+            Login to a portable account <code>v2/user/login</code>
           </li>
-          <li>Create App Pod</li>
-          <li>Open App Pod</li>
-          <li>Create App Directory</li>
-          <li>Create a todo item (as a file)</li>
-          <li>List Todo Files</li>
-          <li>Read Todo Item</li>
-          <li>Delete Todo</li>
+          <li>Create App Pod <code>v1/pod/new</code></li>
+          <li>Open App Pod <code>v1/pod/open</code></li>
+          <li>Create App Directory <code>v1/dir/mkdir</code></li>
+          <li>Create a todo item (as a file) <code>v1/file/upload</code></li>
+          <li>List Todo Files <code>v1/dir/ls</code></li>
+          <li>Read Todo Item <code>v1/file/download</code></li>
+          <li>Delete Todo <code>v1/file/delete</code></li>
           <li>Next Steps</li>
         </ol>
       </dd>
@@ -144,14 +108,51 @@
 {/if}
 {#if $next[9]}
   <section>
+    <h2>All FairOS Endpoints</h2>
+    <p>A complete list of all available endpoints provided by FairOS is listed below.</p>
+    <div class="notice">
+    <dl>
+      <dt>FairOS-dfs API</dt>
+      <dd>
+        <dl>
+          {#each Object.entries(api) as [topic, data]}
+            <dt>{topic}</dt>
+            <dd>
+              <ul>
+                {#each Object.entries(data) as [path, json]}
+                  {@const method = json.method == "del" ? "delete" : json.method}
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={`https://docs.fairos.fairdatasociety.org/api/index.html#tag/${topic}/paths/~1${path.replace(
+                        /\//g,
+                        "~1"
+                      )}/${method}`}
+                    >
+                      <code>
+                        <strong>{method.toUpperCase()}</strong>
+                        {path}
+                      </code>
+                    </a>
+                    : {json.endpoint}
+                  </li>
+                {/each}
+              </ul>
+            </dd>
+          {/each}
+        </dl>
+      </dd>
+    </dl></div>
+  </section>
+  <section>
     <h2>10. Next Steps:</h2>
     <div class="notice">
       <p>
-        In <strong>Part 2</strong>, we have now covered how to create and use
-        FDP portable accounts to store and retrieve private data.
-      </p>
+        In <strong>Part 2</strong>, we have now covered how to use specific FairOS REST API endpoints to create FDP portable accounts as well as to build a Todo dapp that stores and retrieves personal data.</p>
+      <br/>
       <a href="#/building-a-todo-dapp/resources" role="button"
-        >Links & Resources</a
+        >Additional Links & Resources</a
       >
     </div>
   </section>

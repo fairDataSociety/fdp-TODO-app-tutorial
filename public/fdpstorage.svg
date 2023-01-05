@@ -1,0 +1,307 @@
+<svg version="1.1" baseProfile="full" width="615.3" height="1074.0" viewbox="0 0 615.25 1074" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+		<desc >#.box: fill=pink dashed
+	#.fdp: fill=lime dashed
+	#.package: fill=lime
+	#direction: rights
+		[&lt;actor&gt; Dev]--&gt;[&lt;package&gt;FdpStorage| TypeScript Class]
+	    [Dev]--&gt;[&lt;package&gt;Blossom| TypeScript Class]
+	    [Blossom]-&gt;[FdpStorage]
+		
+		[FdpStorage]-&gt;[IMPORT local account|🡲 mnemonic|setAccountFromMnemonic]
+		[FdpStorage]-&gt;[CREATE local account|createWallet|setAccountFromMnemonic]
+		[CREATE local account]-&gt;[Lite Account]
+		
+		[IMPORT local account]-&gt;[&lt;database&gt;Lite Account|⬤ wallet|✅ Local|❌ Portable]
+		[Lite Account]-&gt;[REGISTER Account|✅ On-Chain|🡲 userName|🡲 password|🡲 wallet.mnemonic.phrase]
+		[REGISTER Account]-&gt;[&lt;box&gt;TOP-UP account|🡲 wallet.address|+ 0.1 GETH]
+		
+		[TOP-UP account]-&gt;[&lt;database&gt;FDS Account|✅ Portable]
+		[FdpStorage]-&gt;[FDS Login|🡲 userName|🡲 password]
+		[FDS Login]-&gt;[FDS Account]</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="bold" font-style="normal">
+			<g transform="translate(0.5, 0.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+				<g stroke="transparent" fill="transparent">
+					<rect x="0.0" y="0.0" height="1074.0" width="615.3" stroke="none"></rect>
+				</g>
+			<g transform="translate(8, 8)" fill="#33322E">
+					<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+						<g stroke-dasharray="6 6">
+							<path d="M326.5 47.3 L295 75 L295 126 L295 126 L295 177 L295 177 L311.3297162379032 192.42250978024188 L311.3 192.4 " fill="none"></path>
+						</g>
+					<path d="M302.8 191.7 L311.3 192.4 L310.1 184.0 L316.2 197.0 Z"></path>
+					<g stroke-dasharray="6 6">
+							<path d="M371.5 47.3 L403 75 L403 88.33333333333333 L403.0 88.3 " fill="none"></path>
+						</g>
+					<path d="M397.7 81.7 L403.0 88.3 L408.3 81.7 L403.0 95.0 Z"></path>
+					<path d="M403.0 157.0 L403 177 L386.6702837620968 192.42250978024188 L386.7 192.4 " fill="none"></path>
+					<path d="M387.9 184.0 L386.7 192.4 L395.2 191.7 L381.8 197.0 Z"></path>
+					<path d="M349.0 259.0 L349 279 L349 292.3333333333333 L349.0 292.3 " fill="none"></path>
+					<path d="M343.7 285.7 L349.0 292.3 L354.3 285.7 L349.0 299.0 Z"></path>
+					<path d="M281.0 242.1 L103 279 L103 292.3333333333333 L103.0 292.3 " fill="none"></path>
+					<path d="M97.7 285.7 L103.0 292.3 L108.3 285.7 L103.0 299.0 Z"></path>
+					<path d="M103.0 392.0 L103 412 L164.1197978289438 456.72180328947104 L164.1 456.7 " fill="none"></path>
+					<path d="M155.6 457.1 L164.1 456.7 L161.9 448.5 L169.5 460.7 Z"></path>
+					<path d="M349.0 392.0 L349 412 L287.8802021710562 456.72180328947104 L287.9 456.7 " fill="none"></path>
+					<path d="M290.1 448.5 L287.9 456.7 L296.4 457.1 L282.5 460.7 Z"></path>
+					<path d="M226.0 572.0 L226 592 L226 605.3333333333334 L226.0 605.3 " fill="none"></path>
+					<path d="M220.7 598.7 L226.0 605.3 L231.3 598.7 L226.0 612.0 Z"></path>
+					<path d="M226.0 767.0 L226 787 L226 800.3333333333334 L226.0 800.3 " fill="none"></path>
+					<path d="M220.7 793.7 L226.0 800.3 L231.3 793.7 L226.0 807.0 Z"></path>
+					<path d="M226.0 900.0 L226 920 L248.7811389867891 936.1451915942409 L248.8 936.1 " fill="none"></path>
+					<path d="M240.3 936.6 L248.8 936.1 L246.4 927.9 L254.2 940.0 Z"></path>
+					<path d="M417.0 250.4 L503.75 279 L503.75 345.5 L503.75 345.5 L503.75 412 L503.75 412 L503.75 502 L503.75 502 L503.75 592 L503.75 592 L503.75 689.5 L503.75 689.5 L503.75 787 L503.75 787 L503.75 800.3333333333334 L503.8 800.3 " fill="none"></path>
+					<path d="M498.4 793.7 L503.8 800.3 L509.1 793.7 L503.8 807.0 Z"></path>
+					<path d="M503.8 900.0 L503.75 920 L373.6296107113754 959.4709664166008 L373.6 959.5 " fill="none"></path>
+					<path d="M378.5 952.4 L373.6 959.5 L381.6 962.6 L367.3 961.4 Z"></path>
+					<g data-name="REGISTER Account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="REGISTER Account">
+								<rect x="122.0" y="612.0" height="155.0" width="209.0" data-name="REGISTER Account"></rect>
+							<path d="M122.0 643.0 L331.0 643.0" fill="none" data-name="REGISTER Account"></path>
+							<path d="M122.0 674.0 L331.0 674.0" fill="none" data-name="REGISTER Account"></path>
+							<path d="M122.0 705.0 L331.0 705.0" fill="none" data-name="REGISTER Account"></path>
+							<path d="M122.0 736.0 L331.0 736.0" fill="none" data-name="REGISTER Account"></path>
+							</g>
+						<g transform="translate(122, 612)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="REGISTER Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="REGISTER Account">
+									<text x="96.5" y="13.5" stroke="none" text-anchor="middle" data-name="REGISTER Account">REGISTER Account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(122, 643)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="REGISTER Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="REGISTER Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="REGISTER Account">✅ On-Chain</text>
+								
+								</g>
+							</g>
+						<g transform="translate(122, 674)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="REGISTER Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="REGISTER Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="REGISTER Account">🡲 userName</text>
+								
+								</g>
+							</g>
+						<g transform="translate(122, 705)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="REGISTER Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="REGISTER Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="REGISTER Account">🡲 password</text>
+								
+								</g>
+							</g>
+						<g transform="translate(122, 736)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="REGISTER Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="REGISTER Account">
+									<text x="0.0" y="13.5" stroke="none" data-name="REGISTER Account">🡲 wallet.mnemonic.phrase</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="Lite Account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="Lite Account">
+								<rect x="170.0" y="440.0" height="128.0" width="113.0" stroke="none" data-name="Lite Account"></rect>
+							<path d="M170.0 440.0 L170.0 564.0" fill="none" data-name="Lite Account"></path>
+							<path d="M283.0 440.0 L283.0 564.0" fill="none" data-name="Lite Account"></path>
+							<ellipse cx="226.0" cy="440.0" rx="56.5" ry="6.0" data-name="Lite Account"></ellipse>
+							<path d="M282.5 564.0 L282.4 564.3 L282.2 564.6 L281.9 564.9 L281.4 565.2 L280.8 565.5 L280.0 565.8 L279.1 566.1 L278.1 566.3 L276.9 566.6 L275.6 566.9 L274.2 567.1 L272.7 567.4 L271.0 567.6 L269.3 567.9 L267.4 568.1 L265.5 568.3 L263.4 568.5 L261.2 568.7 L259.0 568.9 L256.7 569.0 L254.2 569.2 L251.8 569.3 L249.2 569.5 L246.6 569.6 L244.0 569.7 L241.3 569.8 L238.6 569.8 L235.8 569.9 L233.0 570.0 L230.2 570.0 L227.4 570.0 L224.6 570.0 L221.8 570.0 L219.0 570.0 L216.2 569.9 L213.4 569.8 L210.7 569.8 L208.0 569.7 L205.4 569.6 L202.8 569.5 L200.2 569.3 L197.7 569.2 L195.3 569.0 L193.0 568.9 L190.8 568.7 L188.6 568.5 L186.5 568.3 L184.6 568.1 L182.7 567.9 L181.0 567.6 L179.3 567.4 L177.8 567.1 L176.4 566.9 L175.1 566.6 L173.9 566.3 L172.9 566.1 L172.0 565.8 L171.2 565.5 L170.6 565.2 L170.1 564.9 L169.8 564.6 L169.6 564.3 L169.5 564.0" data-name="Lite Account"></path>
+							<path d="M170.0 471.0 L171.2 472.2 L174.9 473.4 L180.8 474.5 L188.7 475.5 L198.3 476.2 L209.0 476.7 L220.6 477.0 L232.4 477.0 L244.0 476.7 L254.8 476.2 L264.3 475.5 L272.2 474.5 L278.1 473.4 L281.8 472.2 L283.0 471.0" fill="none" data-name="Lite Account"></path>
+							<path d="M170.0 502.0 L171.2 503.2 L174.9 504.4 L180.8 505.5 L188.7 506.5 L198.3 507.2 L209.0 507.7 L220.6 508.0 L232.4 508.0 L244.0 507.7 L254.8 507.2 L264.3 506.5 L272.2 505.5 L278.1 504.4 L281.8 503.2 L283.0 502.0" fill="none" data-name="Lite Account"></path>
+							<path d="M170.0 533.0 L171.2 534.2 L174.9 535.4 L180.8 536.5 L188.7 537.5 L198.3 538.2 L209.0 538.7 L220.6 539.0 L232.4 539.0 L244.0 538.7 L254.8 538.2 L264.3 537.5 L272.2 536.5 L278.1 535.4 L281.8 534.2 L283.0 533.0" fill="none" data-name="Lite Account"></path>
+							</g>
+						<g transform="translate(170, 444)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Lite Account">
+									<text x="48.5" y="13.5" stroke="none" text-anchor="middle" data-name="Lite Account">Lite Account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(170, 475)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Lite Account">
+									<text x="48.5" y="13.5" stroke="none" text-anchor="middle" data-name="Lite Account">⬤ wallet</text>
+								
+								</g>
+							</g>
+						<g transform="translate(170, 506)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Lite Account">
+									<text x="48.5" y="13.5" stroke="none" text-anchor="middle" data-name="Lite Account">✅ Local</text>
+								
+								</g>
+							</g>
+						<g transform="translate(170, 537)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Lite Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Lite Account">
+									<text x="48.5" y="13.5" stroke="none" text-anchor="middle" data-name="Lite Account">❌ Portable</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="IMPORT local account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="IMPORT local account">
+								<rect x="246.0" y="299.0" height="93.0" width="206.0" data-name="IMPORT local account"></rect>
+							<path d="M246.0 330.0 L452.0 330.0" fill="none" data-name="IMPORT local account"></path>
+							<path d="M246.0 361.0 L452.0 361.0" fill="none" data-name="IMPORT local account"></path>
+							</g>
+						<g transform="translate(246, 299)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="IMPORT local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="IMPORT local account">
+									<text x="95.0" y="13.5" stroke="none" text-anchor="middle" data-name="IMPORT local account">IMPORT local account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(246, 330)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IMPORT local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="IMPORT local account">
+									<text x="0.0" y="13.5" stroke="none" data-name="IMPORT local account">🡲 mnemonic</text>
+								
+								</g>
+							</g>
+						<g transform="translate(246, 361)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IMPORT local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="IMPORT local account">
+									<text x="0.0" y="13.5" stroke="none" data-name="IMPORT local account">setAccountFromMnemonic</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="CREATE local account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="CREATE local account">
+								<rect x="0.0" y="299.0" height="93.0" width="206.0" data-name="CREATE local account"></rect>
+							<path d="M0.0 330.0 L206.0 330.0" fill="none" data-name="CREATE local account"></path>
+							<path d="M0.0 361.0 L206.0 361.0" fill="none" data-name="CREATE local account"></path>
+							</g>
+						<g transform="translate(0, 299)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CREATE local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="CREATE local account">
+									<text x="95.0" y="13.5" stroke="none" text-anchor="middle" data-name="CREATE local account">CREATE local account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(0, 330)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CREATE local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="CREATE local account">
+									<text x="0.0" y="13.5" stroke="none" data-name="CREATE local account">createWallet</text>
+								
+								</g>
+							</g>
+						<g transform="translate(0, 361)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CREATE local account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="CREATE local account">
+									<text x="0.0" y="13.5" stroke="none" data-name="CREATE local account">setAccountFromMnemonic</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="TOP-UP account">
+							<g fill="pink" stroke="#33322E" stroke-dasharray="6 6" data-name="TOP-UP account">
+								<rect x="155.0" y="807.0" height="93.0" width="142.0" data-name="TOP-UP account"></rect>
+							<path d="M155.0 838.0 L297.0 838.0" fill="none" data-name="TOP-UP account"></path>
+							<path d="M155.0 869.0 L297.0 869.0" fill="none" data-name="TOP-UP account"></path>
+							</g>
+						<g transform="translate(155, 807)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TOP-UP account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TOP-UP account">
+									<text x="63.0" y="13.5" stroke="none" text-anchor="middle" data-name="TOP-UP account">TOP-UP account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(155, 838)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TOP-UP account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TOP-UP account">
+									<text x="0.0" y="13.5" stroke="none" data-name="TOP-UP account">🡲 wallet.address</text>
+								
+								</g>
+							</g>
+						<g transform="translate(155, 869)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TOP-UP account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TOP-UP account">
+									<text x="0.0" y="13.5" stroke="none" data-name="TOP-UP account">+ 0.1 GETH</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FDS Login">
+							<g fill="#eee8d5" stroke="#33322E" data-name="FDS Login">
+								<rect x="448.0" y="807.0" height="93.0" width="111.0" data-name="FDS Login"></rect>
+							<path d="M448.0 838.0 L559.0 838.0" fill="none" data-name="FDS Login"></path>
+							<path d="M448.0 869.0 L559.0 869.0" fill="none" data-name="FDS Login"></path>
+							</g>
+						<g transform="translate(448, 807)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="FDS Login">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FDS Login">
+									<text x="47.5" y="13.5" stroke="none" text-anchor="middle" data-name="FDS Login">FDS Login</text>
+								
+								</g>
+							</g>
+						<g transform="translate(448, 838)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FDS Login">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FDS Login">
+									<text x="0.0" y="13.5" stroke="none" data-name="FDS Login">🡲 userName</text>
+								
+								</g>
+							</g>
+						<g transform="translate(448, 869)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FDS Login">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FDS Login">
+									<text x="0.0" y="13.5" stroke="none" data-name="FDS Login">🡲 password</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FdpStorage">
+							<g fill="lime" stroke="#33322E" data-name="FdpStorage">
+								<rect x="281.0" y="197.0" height="62.0" width="136.0" data-name="FdpStorage"></rect>
+							<path d="M281.0 228.0 L417.0 228.0" fill="none" data-name="FdpStorage"></path>
+							</g>
+						<g transform="translate(281, 197)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FdpStorage">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FdpStorage">
+									<text x="60.0" y="13.5" stroke="none" text-anchor="middle" data-name="FdpStorage">FdpStorage</text>
+								
+								</g>
+							</g>
+						<g transform="translate(281, 228)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FdpStorage">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="FdpStorage">
+									<text x="0.0" y="13.5" stroke="none" data-name="FdpStorage">TypeScript Class</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="Blossom">
+							<g fill="lime" stroke="#33322E" data-name="Blossom">
+								<rect x="335.0" y="95.0" height="62.0" width="136.0" data-name="Blossom"></rect>
+							<path d="M335.0 126.0 L471.0 126.0" fill="none" data-name="Blossom"></path>
+							</g>
+						<g transform="translate(335, 95)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Blossom">
+									<text x="60.0" y="13.5" stroke="none" text-anchor="middle" data-name="Blossom">Blossom</text>
+								
+								</g>
+							</g>
+						<g transform="translate(335, 126)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Blossom">
+									<text x="0.0" y="13.5" stroke="none" data-name="Blossom">TypeScript Class</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="FDS Account">
+							<g fill="#eee8d5" stroke="#33322E" data-name="FDS Account">
+								<rect x="251.0" y="948.0" height="66.0" width="116.0" stroke="none" data-name="FDS Account"></rect>
+							<path d="M251.0 948.0 L251.0 1010.0" fill="none" data-name="FDS Account"></path>
+							<path d="M367.0 948.0 L367.0 1010.0" fill="none" data-name="FDS Account"></path>
+							<ellipse cx="309.3" cy="948.0" rx="58.0" ry="6.0" data-name="FDS Account"></ellipse>
+							<path d="M367.3 1010.0 L367.2 1010.3 L367.0 1010.6 L366.6 1010.9 L366.1 1011.2 L365.5 1011.5 L364.7 1011.8 L363.8 1012.1 L362.7 1012.3 L361.5 1012.6 L360.2 1012.9 L358.7 1013.1 L357.2 1013.4 L355.5 1013.6 L353.7 1013.9 L351.8 1014.1 L349.7 1014.3 L347.6 1014.5 L345.4 1014.7 L343.1 1014.9 L340.7 1015.0 L338.2 1015.2 L335.7 1015.3 L333.1 1015.5 L330.4 1015.6 L327.7 1015.7 L325.0 1015.8 L322.2 1015.8 L319.3 1015.9 L316.5 1016.0 L313.6 1016.0 L310.7 1016.0 L307.8 1016.0 L304.9 1016.0 L302.0 1016.0 L299.2 1015.9 L296.3 1015.8 L293.5 1015.8 L290.8 1015.7 L288.1 1015.6 L285.4 1015.5 L282.8 1015.3 L280.2 1015.2 L277.8 1015.0 L275.4 1014.9 L273.1 1014.7 L270.9 1014.5 L268.8 1014.3 L266.7 1014.1 L264.8 1013.9 L263.0 1013.6 L261.3 1013.4 L259.8 1013.1 L258.3 1012.9 L257.0 1012.6 L255.8 1012.3 L254.7 1012.1 L253.8 1011.8 L253.0 1011.5 L252.4 1011.2 L251.9 1010.9 L251.5 1010.6 L251.3 1010.3 L251.3 1010.0" data-name="FDS Account"></path>
+							<path d="M251.0 979.0 L252.3 980.2 L256.0 981.4 L262.1 982.5 L270.2 983.5 L280.0 984.2 L291.1 984.7 L302.9 985.0 L315.1 985.0 L326.9 984.7 L338.0 984.2 L347.8 983.5 L355.9 982.5 L362.0 981.4 L365.7 980.2 L367.0 979.0" fill="none" data-name="FDS Account"></path>
+							</g>
+						<g transform="translate(251, 952)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="FDS Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FDS Account">
+									<text x="50.0" y="13.5" stroke="none" text-anchor="middle" data-name="FDS Account">FDS Account</text>
+								
+								</g>
+							</g>
+						<g transform="translate(251, 983)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="FDS Account">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="FDS Account">
+									<text x="50.0" y="13.5" stroke="none" text-anchor="middle" data-name="FDS Account">✅ Portable</text>
+								
+								</g>
+							</g>
+						</g>
+					<g data-name="Dev">
+							<g fill="#eee8d5" stroke="#33322E" data-name="Dev">
+								<circle r="4.0" cx="349.0" cy="12.0" data-name="Dev"></circle>
+							<path d="M349.0 16.0 L349.0 24.0" fill="none" data-name="Dev"></path>
+							<path d="M345.0 20.0 L353.0 20.0" fill="none" data-name="Dev"></path>
+							<path d="M345.0 28.0 L349.0 24.0 L353.0 28.0" fill="none" data-name="Dev"></path>
+							</g>
+						<g transform="translate(327, 24)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Dev">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Dev">
+									<text x="14.5" y="13.5" stroke="none" text-anchor="middle" data-name="Dev">Dev</text>
+								
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>

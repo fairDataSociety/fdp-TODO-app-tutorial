@@ -9,7 +9,7 @@
     try {
       $wallet = $fdp.account.createWallet();
       $fdp.account.setAccountFromMnemonic($wallet.mnemonic.phrase);
-      console.log({ wallet: $fdp.account.wallet });
+      console.log({ wallet: $fdp.account.wallet, account:$fdp.account });
       $steps[2] = true;
     } catch (err) {
       console.error(err);
@@ -18,7 +18,7 @@
 </script>
 
 <section>
-  <h2>2. Create an FDP wallet:</h2>
+  <h2>2. Create a local FDP account:</h2>
   <Code source={createWalletCode} />
   {#if $steps[2] && $tutorialMode == TutorialMode.FDP_INTERACTIVE}
     <dl class="notice">

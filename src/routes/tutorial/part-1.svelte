@@ -17,13 +17,15 @@
   import Step_02_InitFDP from "../../lib/components/part1/Step-02-InitFDP.svelte";
   import Step_03_ListAccounts from "../../lib/components/part1/Step-03-ListAccounts.svelte";
   import Step_04_CreateWallet from "../../lib/components/part1/Step-04-Create-Wallet.svelte";
-  import Step_06_ListPods from "../../lib/components/part1/Step-06-ListPods.svelte";
-  import Step_07_CreateAppPod from "../../lib/components/part1/Step-07-CreateAppPod.svelte";
+  import Step_07_ListPods from "../../lib/components/part1/Step-07-ListPods.svelte";
+  import Step_06_CreateAppPod from "../../lib/components/part1/Step-06-CreateAppPod.svelte";
   import Step_08_CreateAppDir from "../../lib/components/part1/Step-08-CreateAppDir.svelte";
   import Step_09_CreateTododItem from "../../lib/components/part1/Step-09-CreateTododItem.svelte";
   import Step_10_ListTodos from "../../lib/components/part1/Step-10-ListTodos.svelte";
   import Step_11_DeleteTodo from "../../lib/components/part1/Step-11-DeleteTodo.svelte";
   import Step_12_ImportWallet from "../../lib/components/part1/Step-12-ImportWallet.svelte";
+  import Step_13RegisterAccount from "../../lib/components/part1/Step-13-RegisterAccount.svelte";
+  import { scrollPageToTop } from "../../lib/utils";
 
   const listTodoItems = async () => {
     const dir = await $fdp.directory.read(
@@ -51,10 +53,11 @@
     $isLocalSetup = window.location.href
       .split("//")[1]
       .startsWith("localhost:");
+      scrollPageToTop();
   });
 </script>
 
-<h1>FdpStorage</h1>
+<h1>Using FdpStorage & Blossom</h1>
 <Step_00_Setup />
 <Step_02_InitFDP />
 {#if $next[1]}
@@ -63,11 +66,14 @@
 {#if $next[1.1]}
   <Step_04_CreateWallet />
 {/if}
+<!-- {#if $next[2.1]}
+  <Step_07_ListPods />
+{/if} -->
 {#if $next[2.1]}
-  <Step_06_ListPods />
-{/if}
-{#if $next[3]}
-  <Step_07_CreateAppPod />
+  <Step_06_CreateAppPod />
+  {#if $next[3]}
+    <Step_07_ListPods />
+  {/if}
   {#if $next[4]}
     <Step_08_CreateAppDir />
   {/if}
@@ -84,20 +90,24 @@
     <Step_12_ImportWallet />
   {/if}
   {#if $next[9]}
+    <Step_13RegisterAccount />
+  {/if}
+  {#if $next[10]}
     <section>
-      <h2>10. Next Steps:</h2>
+      <h2>12. Next: Using FairOS</h2>
       <div class="notice">
         <p>
           In <strong>Part 1</strong>, we have now covered how to create and use
-          FDP Lite accounts to store and retrieve private data.
+          local FDP Lite accounts to store and retrieve private data. We also
+          covered how to import an existing local account using the recovery
+          phrase (mnemonic) and making it portable by registering it on-chain.
         </p>
         <p>
-          In the next part we will learn how to upgrade FDP accounts from a Lite
-          account to a Portable account by registering it on-chain, thus making
-          all the data associated with the account portable.
+          In the next part we will cover an alternative approach to build on FDP
+          using FairOS endpoints.
         </p>
         <a href="#/building-a-todo-dapp/fairos" role="button"
-          >Part 2: Portability & Interoperability</a
+          >Option 2: Using FairOS REST API endpoints</a
         >
       </div>
     </section>

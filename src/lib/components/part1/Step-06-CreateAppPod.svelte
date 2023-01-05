@@ -12,12 +12,12 @@
     } catch (err) {
       console.error(err);
     }
-    $steps[4] = true;
+    $steps[3] = true;
   };
 </script>
 
 <section>
-  <h2>4. Create app pod:</h2>
+  <h2>3. Create app pod:</h2>
   This<code class="in">{config.todoAppNamespace}</code> pod will serve as the
   namespace for our Todo app.
   <Code source={createAppPodCode} />
@@ -26,5 +26,5 @@
       The <strong>{$appPod.name}</strong> pod has been created!
     </p>
   {/if}
-  <RunButton step="4" handler={createAppPod} actionText="Create an App Pod" />
+  <RunButton step="3" handler={createAppPod} actionText="Create an App Pod" />
 </section>

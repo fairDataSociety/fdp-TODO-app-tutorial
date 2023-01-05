@@ -28,7 +28,7 @@
 </script>
 
 <section>
-  <h2>9. Importing a wallet</h2>
+  <h2>9. Importing an account</h2>
   <Code source={importWalletCode} />
   {#if $wallet?.mnemonic?.phrase}
     <dl>

@@ -44,7 +44,6 @@
     requirements and steps mentioned in the previous <b>Setup</b> section have all
     been fulfilled.
   </p>
-
   <dl>
     <dt>Steps:</dt>
     <dd>
@@ -54,20 +53,26 @@
           <ul><li>List accounts and balances</li></ul>
         </li>
         <li>
-          Create an FDP wallet
+          Create a local FDP Lite Account
           <ul><li>Save mnemonic phrase</li></ul>
         </li>
-
-        <li>List existing pods</li>
         <li>Create app pod</li>
+        <li>List all pods</li>
         <li>Create a directory</li>
         <li>Create a todo item (as a file)</li>
         <li>List all todo items</li>
         <li>Deleting a todo</li>
-        <li>Importing a wallet</li>
+        <li>Importing an account</li>
+        <li>Registering an account on-chain</li>
+        <li>Using Blossom</li>
         <li>Next Steps</li>
       </ol>
     </dd>
+    <dt>Create FDS portable account:</dt>
+    <dd><a href="fdpstorage.svg" target="_blank"
+      ><img alt="FdpStorage" src="fdpstorage.svg" /></a
+    ></dd>
+    <dl>
   </dl>
   <button
     on:click={() => startInteractiveTutorial()}

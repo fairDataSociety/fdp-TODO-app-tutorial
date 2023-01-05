@@ -11,12 +11,12 @@
     $pods = $podList.getPods();
     $sharedPods = $podList.getSharedPods();
     console.log({ pods: $pods, sharedPods: $sharedPods });
-    $steps[3] = true;
+    $steps[4] = true;
   };
 </script>
 
 <section>
-  <h2>3. List existing pods:</h2>
+  <h2>4. List existing pods:</h2>
   <Code source={listPodsCode} />
   {#if $pods}
     <dl class="notice">
@@ -42,5 +42,5 @@
       </dd>
     </dl>
   {/if}
-  <RunButton step="3" handler={listPods} actionText="List existing pods" />
+  <RunButton step="4" handler={listPods} actionText="List existing pods" />
 </section>

@@ -1,0 +1,135 @@
+<svg version="1.1" baseProfile="full" width="352.0" height="558.0" viewbox="0 0 352 558" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+		<desc >#.box: fill=pink dashed
+	#.fdp: fill=lime dashed
+	#.package: fill=lime
+	#direction: rights
+	[&lt;package&gt;Blossom Browser Extension|
+		[Blossom Instance|blossom = new Blossom()|
+	 		[fdpStorage]-&gt;[personalStorage|isDappPodCreated()|create(blossom.dappId)]
+		]
+	    [Blossom Instance]-&gt;[Properties|⬤ dappId|⬤ signer]
+	    
+	]
+	
+	
+	</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+			<g transform="translate(0.5, 0.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+				<g stroke="transparent" fill="transparent">
+					<rect x="0.0" y="0.0" height="558.0" width="352.0" stroke="none"></rect>
+				</g>
+			<g transform="translate(8, 8)" fill="#33322E">
+					<g transform="translate(20, 20)">
+						<g data-name="Blossom Browser Extension">
+							<g fill="lime" stroke="#33322E" data-name="Blossom Browser Extension">
+								<rect x="0.0" y="0.0" height="502.0" width="296.0" data-name="Blossom Browser Extension"></rect>
+							<path d="M0.0 31.0 L296.0 31.0" fill="none" data-name="Blossom Browser Extension"></path>
+							</g>
+						<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Browser Extension">
+								<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Blossom Browser Extension">
+									<text x="140.0" y="13.5" stroke="none" text-anchor="middle" data-name="Blossom Browser Extension">Blossom Browser Extension</text>
+								
+								</g>
+							</g>
+						<g transform="translate(0, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Browser Extension">
+								<g transform="translate(8, 8)" fill="#33322E" data-name="Blossom Browser Extension">
+									<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Browser Extension">
+										<path d="M120.0 282.0 L120 302 L120 315.3333333333333 L120.0 315.3 " fill="none" data-name="Blossom Browser Extension"></path>
+									<path d="M114.7 308.7 L120.0 315.3 L125.3 308.7 L120.0 322.0 Z" data-name="Blossom Browser Extension"></path>
+									<g data-name="Blossom Instance">
+											<g fill="#fdf6e3" stroke="#33322E" data-name="Blossom Instance">
+												<rect x="0.0" y="0.0" height="282.0" width="240.0" data-name="Blossom Instance"></rect>
+											<path d="M0.0 31.0 L240.0 31.0" fill="none" data-name="Blossom Instance"></path>
+											<path d="M0.0 62.0 L240.0 62.0" fill="none" data-name="Blossom Instance"></path>
+											</g>
+										<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Blossom Instance">
+												<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Blossom Instance">
+													<text x="112.0" y="13.5" stroke="none" text-anchor="middle" data-name="Blossom Instance">Blossom Instance</text>
+												
+												</g>
+											</g>
+										<g transform="translate(0, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Instance">
+												<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Blossom Instance">
+													<text x="0.0" y="13.5" stroke="none" data-name="Blossom Instance">blossom = new Blossom()</text>
+												
+												</g>
+											</g>
+										<g transform="translate(0, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Instance">
+												<g transform="translate(8, 8)" fill="#33322E" data-name="Blossom Instance">
+													<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Blossom Instance">
+														<path d="M92.0 31.0 L92 51 L92 64.33333333333333 L92.0 64.3 " fill="none" data-name="Blossom Instance"></path>
+													<path d="M86.7 57.7 L92.0 64.3 L97.3 57.7 L92.0 71.0 Z" data-name="Blossom Instance"></path>
+													<g data-name="personalStorage">
+															<g fill="#eee8d5" stroke="#33322E" data-name="personalStorage">
+																<rect x="0.0" y="71.0" height="93.0" width="184.0" data-name="personalStorage"></rect>
+															<path d="M0.0 102.0 L184.0 102.0" fill="none" data-name="personalStorage"></path>
+															<path d="M0.0 133.0 L184.0 133.0" fill="none" data-name="personalStorage"></path>
+															</g>
+														<g transform="translate(0, 71)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="personalStorage">
+																<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="personalStorage">
+																	<text x="84.0" y="13.5" stroke="none" text-anchor="middle" data-name="personalStorage">personalStorage</text>
+																
+																</g>
+															</g>
+														<g transform="translate(0, 102)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="personalStorage">
+																<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="personalStorage">
+																	<text x="0.0" y="13.5" stroke="none" data-name="personalStorage">isDappPodCreated()</text>
+																
+																</g>
+															</g>
+														<g transform="translate(0, 133)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="personalStorage">
+																<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="personalStorage">
+																	<text x="0.0" y="13.5" stroke="none" data-name="personalStorage">create(blossom.dappId)</text>
+																
+																</g>
+															</g>
+														</g>
+													<g data-name="fdpStorage">
+															<g fill="#eee8d5" stroke="#33322E" data-name="fdpStorage">
+																<rect x="42.0" y="0.0" height="31.0" width="100.0" data-name="fdpStorage"></rect>
+															</g>
+														<g transform="translate(42, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="fdpStorage">
+																<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="fdpStorage">
+																	<text x="42.0" y="13.5" stroke="none" text-anchor="middle" data-name="fdpStorage">fdpStorage</text>
+																
+																</g>
+															</g>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									<g data-name="Properties">
+											<g fill="#fdf6e3" stroke="#33322E" data-name="Properties">
+												<rect x="73.0" y="322.0" height="93.0" width="95.0" data-name="Properties"></rect>
+											<path d="M73.0 353.0 L168.0 353.0" fill="none" data-name="Properties"></path>
+											<path d="M73.0 384.0 L168.0 384.0" fill="none" data-name="Properties"></path>
+											</g>
+										<g transform="translate(73, 322)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Properties">
+												<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Properties">
+													<text x="39.5" y="13.5" stroke="none" text-anchor="middle" data-name="Properties">Properties</text>
+												
+												</g>
+											</g>
+										<g transform="translate(73, 353)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Properties">
+												<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Properties">
+													<text x="0.0" y="13.5" stroke="none" data-name="Properties">⬤ dappId</text>
+												
+												</g>
+											</g>
+										<g transform="translate(73, 384)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Properties">
+												<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Properties">
+													<text x="0.0" y="13.5" stroke="none" data-name="Properties">⬤ signer</text>
+												
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>

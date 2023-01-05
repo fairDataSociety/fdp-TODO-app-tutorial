@@ -44,7 +44,9 @@ if(response.ok){
 }
 `;
   let wallet;
+
   onMount(() => {
+    
     $fdp = new FdpStorage(config.beeUrl, config.postageBatchId);
     wallet = $fdp.account.createWallet();
     console.log({ wallet });

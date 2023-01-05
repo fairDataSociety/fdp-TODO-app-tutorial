@@ -55,12 +55,12 @@ export const getAddressBalances = async (fdp: FdpStorage) => {
 };
 export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 export const scrollToBottom = () => {
-  setTimeout(() => {
-    const el = document.getElementById("footer");
-    el.scrollIntoView({
-      behavior: "smooth",
-    });
-  }, 500);
+  // setTimeout(() => {
+  //   const el = document.getElementById("footer");
+  //   el.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // }, 500);
 };
 
 export const scrollPageToTop = () => {

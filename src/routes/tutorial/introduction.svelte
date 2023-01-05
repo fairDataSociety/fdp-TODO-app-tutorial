@@ -111,15 +111,33 @@
     </dd>
   </dl>
 </section>
-<a href="#/building-a-todo-dapp/fdp-storage" role="button"
-  >Next: FdpStorage</a
+<section>
+  <h2>10. Next Steps:</h2>
+  <div class="notice">
+    <a href="fdp.svg" target="_blank"
+  ><img alt="Fair Data Protocol" src="fdp.svg" /></a
 >
+    <p>
+      In the next chapters, we will cover two different ways to build with Fair Data Protocol.
+    </p>
+    <ul>
+      <li><a href="#/building-a-todo-dapp/fdp-storage">Option 1: Using FdpStorage & Blossom</a></li>
+      <li><a href="#/building-a-todo-dapp/fairos">Option 2: Using FairOS REST API endpoints</a></li>
+    </ul>
+    <br>
+    <a href="#/building-a-todo-dapp/fdp-storage" role="button"
+  >Option 1: Using FdpStorage & Blossom</a
+  >
+  </div>
+</section>
 <script lang="ts">
   import { onMount } from "svelte";
   import { writable } from "svelte/store";
+  import { scrollPageToTop } from "../../lib/utils";
 
   let url = writable("");
   onMount(()=>{
     $url = window.location.origin;
+    scrollPageToTop();
   })
 </script>
