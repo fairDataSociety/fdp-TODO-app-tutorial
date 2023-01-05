@@ -5,6 +5,12 @@ An interactive how-to guide for beginners on getting started with building dApps
 Independent Todo apps built using the two approaches described in this tutorial:
 - `fdp-storage` & `fdp-play` : https://github.com/fairDataSociety/fdp-storage-TODO-app-example
 - `FairOS` & `fdp-play` : https://github.com/fairDataSociety/fairos-TODO-app-example
+###
+![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/fdp.svg)
+###
+![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/fdpstorage.svg)
+###
+![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/blossom.svg)
 
 ## Local Development Setup
 
