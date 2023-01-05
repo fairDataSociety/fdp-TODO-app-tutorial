@@ -20,7 +20,10 @@ Independent Todo apps built using the two approaches described in this tutorial:
 
 ### Prerequisites:
 
-**Requirements:** Docker must be already installed
+**Requirements:** 
+
+- Docker must be already installed
+- `node >= 16`
 
 #### Install `fdp-play` globally
 ```shell
