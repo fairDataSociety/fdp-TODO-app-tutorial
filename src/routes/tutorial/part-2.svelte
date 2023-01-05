@@ -39,7 +39,7 @@
   });
 </script>
 
-<h1>Using FairOS Endpoints</h1>
+<h1>Using FairOS</h1>
 <section>
   <p>
     We can use the FairOS REST API endpoints provided at <code
@@ -108,7 +108,7 @@
 {/if}
 {#if $next[9]}
   <section>
-    <h2>All FairOS Endpoints</h2>
+    <h2>10. All FairOS Endpoints</h2>
     <p>A complete list of all available endpoints provided by FairOS is listed below.</p>
     <div class="notice">
     <dl>
@@ -146,7 +146,7 @@
     </dl></div>
   </section>
   <section>
-    <h2>10. Next Steps:</h2>
+    <h2>11. Next Steps:</h2>
     <div class="notice">
       <p>
         In <strong>Part 2</strong>, we have now covered how to use specific FairOS REST API endpoints to create FDP portable accounts as well as to build a Todo dapp that stores and retrieves personal data.</p>

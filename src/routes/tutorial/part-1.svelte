@@ -107,7 +107,7 @@
           using FairOS endpoints.
         </p>
         <a href="#/building-a-todo-dapp/fairos" role="button"
-          >Option 2: Using FairOS REST API endpoints</a
+          >Option 2: Using FairOS</a
         >
       </div>
     </section>

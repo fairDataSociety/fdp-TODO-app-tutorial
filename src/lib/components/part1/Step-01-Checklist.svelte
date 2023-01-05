@@ -65,7 +65,7 @@
         <li>Importing an account</li>
         <li>Registering an account on-chain</li>
         <li>Using Blossom</li>
-        <li>Next Steps</li>
+        <li>Next: Using FairOS</li>
       </ol>
     </dd>
     <dt>Create FDS portable account:</dt>
