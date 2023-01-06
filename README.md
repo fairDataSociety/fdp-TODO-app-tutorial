@@ -7,15 +7,15 @@ Independent Todo apps built using the two approaches described in this tutorial:
 - `FairOS` & `fdp-play` : https://github.com/fairDataSociety/fairos-TODO-app-example
 
 ---
-#### Fair Data Protocol - Creating Accounts
+#### Diagram 1: Fair Data Protocol - Creating Accounts
 ![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/fdp.svg)
 
 ---
-#### Creating Accounts wit FdpStorage / Blossom
+#### Diagram 2: Creating Accounts wit FdpStorage / Blossom
 ![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/fdpstorage.svg)
 
 ---
-#### Blossom browser extension
+#### Diagram 3: Blossom browser extension
 ![image](https://raw.githubusercontent.com/fairDataSociety/fdp-TODO-app-tutorial/main/public/blossom.svg)
 
 ---
