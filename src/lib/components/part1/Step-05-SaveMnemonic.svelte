@@ -13,7 +13,7 @@
 </script>
 
 {#if $next[2] && $tutorialMode == TutorialMode.FDP_INTERACTIVE}
-  <h3>2.1 Save mnemonic phrase:</h3>
+  <h3 id="f2_1">2.1 Save mnemonic phrase:</h3>
   <RunButton
     step="2.1"
     handler={saveMnemonic}

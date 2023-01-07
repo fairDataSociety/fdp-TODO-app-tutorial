@@ -7,7 +7,7 @@
 </script>
 
 <section>
-  <h2>7. List all todo items:</h2>
+  <h2 id="f7">7. List all todo items:</h2>
   <Code source={listTodoItemsCode} />
   {#if $steps[7] && $todoItems.length}
     <table class="notice">

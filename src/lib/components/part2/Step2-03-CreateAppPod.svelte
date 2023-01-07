@@ -71,7 +71,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>3. Create App Pod</h2>
+  <h2 id="s3">3. Create App Pod</h2>
   <code>POST v1/pod/new : Create pod</code>
   <Code source={code} />
   {#if error}

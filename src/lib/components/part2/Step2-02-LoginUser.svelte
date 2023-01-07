@@ -73,7 +73,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>2. Login to a portable account</h2>
+  <h2 id="s2">2. Login to a portable account</h2>
   <p>
     If the on-chain registration in the previous step was successful, we can now
     log into this account with a username and password.

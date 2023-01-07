@@ -56,3 +56,6 @@ a[role=button]:visited {
 input{
   width:100%;
 }
+.hide{
+  display:none;
+}

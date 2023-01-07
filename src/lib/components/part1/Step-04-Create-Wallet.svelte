@@ -18,7 +18,7 @@
 </script>
 
 <section>
-  <h2>2. Create a local FDP account:</h2>
+  <h2 id="f2">2. Create a local FDP Lite account:</h2>
   <Code source={createWalletCode} />
   {#if $steps[2] && $tutorialMode == TutorialMode.FDP_INTERACTIVE}
     <dl class="notice">

@@ -6,7 +6,7 @@
   import RunButton from "../RunButton.svelte";
 </script>
 
-<h3>1.1 List accounts and balances:</h3>
+<h3 id="f1_1">1.1 List accounts and balances:</h3>
 <Code source={getAccountBalancesCode} />
 {#if $steps[1.1] && $tutorialMode == TutorialMode.FDP_INTERACTIVE}
   <p class="notice">

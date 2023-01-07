@@ -14,12 +14,12 @@
 </script>
 
 <section>
-  <h2>10. Registering an account on-chain</h2>
-  Once a new local account has been created or an existing account has been imported, we can register it on-chain to make it portable. The account's wallet address needs to have a minimum of 0.1 GETH for registration to succeed.
+  <h2 id="f10">10. Registering an account on-chain</h2>
+  Once a new local account has been created or an existing account has been imported, we can register it on-chain to make it portable. The account's wallet address needs to have a minimum of 0.05 GETH for registration to succeed.
   <Code source={code} />
 </section>
 <section>
-  <h2>11. Using Blossom</h2>
+  <h2 id="f11">11. Using Blossom</h2>
   <!-- <button on:click={logBlossom}>Blossom</button> -->
   <div class="notice">
     <p>The <a href="https://github.com/fairDataSociety/blossom">Blossom browser extension</a> acts as a FDS account manager for end-users.</p>

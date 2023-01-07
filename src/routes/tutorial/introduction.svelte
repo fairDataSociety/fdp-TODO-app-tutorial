@@ -1,4 +1,72 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+  import { writable } from "svelte/store";
+  import PageFairOs from "../../lib/components/Page_FairOS.svelte";
+  import PageFdpStorage from "../../lib/components/Page_FdpStorage.svelte";
+  import PageResources from "../../lib/components/Page_Resources.svelte";
+  import { singlePageMode } from "../../lib/store";
+  import { scrollPageToTop } from "../../lib/utils";
+
+  let url = writable("");
+  onMount(()=>{
+    $url = window.location.origin;
+    scrollPageToTop();
+  })
+</script>
 <h1>Getting Started with FDP</h1>
+{#if $singlePageMode}
+<div class="notice">
+  <ul>
+    <li><a href="/">Getting Started with FDP</a>
+      <ul>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#next1">Next steps</a></li>
+      </ul>
+    </li>
+    <li><a href="#fdpstorage">Option 1: Using FdpStorage & Blossom</a>
+      <ol>
+        <li>
+          <a href="#f1">Create an FdpStorage Instance</a>
+          <ul><li><a href="#f1_1">List accounts and balances</a></li></ul>
+        </li>
+        <li><a href="#f2">Create a local FDP Lite Account</a>
+        </li>
+        <li><a href="#f3">Create app pod</a></li>
+        <li><a href="#f4">List all pods</a></li>
+        <li><a href="#f5">Create a directory</a></li>
+        <li><a href="#f6">Create a todo item (as a file)</a></li>
+        <li><a href="#f7">List all todo items</a></li>
+        <li><a href="#f8">Deleting a todo</a></li>
+        <li><a href="#f9">Importing an account</a></li>
+        <li><a href="#f10">Registering an account on-chain</a></li>
+        <li><a href="#f11">Using Blossom</a></li>
+        <li><a href="#f12">Next: Using FairOS</a></li>
+      </ol>
+    </li>
+    <li><a href="#fairos">Option 2: Using FairOS</a>
+      <ol>
+        <li><a href="#s1">Register an account on-chain</a> <code>v2/user/signup</code>
+        </li>
+        <li><a href="#s2">Login to a portable account</a> <code>v2/user/login</code>
+        </li>
+        <li><a href="#s3">Create App Pod</a> <code>v1/pod/new</code></li>
+        <li><a href="#s4">Open App Pod</a> <code>v1/pod/open</code></li>
+        <li><a href="#s5">Create App Directory</a> <code>v1/dir/mkdir</code></li>
+        <li><a href="#s6">Create a todo item (as a file)</a> <code>v1/file/upload</code></li>
+        <li><a href="#s7">List Todo Files</a> <code>v1/dir/ls</code></li>
+        <li><a href="#s8">Read Todo Item</a> <code>v1/file/download</code></li>
+        <li><a href="#s9">Delete Todo</a> <code>v1/file/delete</code></li>
+        <li><a href="#s10">All FairOS Endpoints</a></li>
+        <li><a href="#s11">Next Steps: Additonal Resources</a></li>
+      </ol>
+    </li>
+    <li>
+      <a href="#resources">Resource & Links</a>
+    </li>
+  </ul>
+</div>
+{/if}
 <section>
   <p>
     In this interactive guide for beginners, we will cover key concepts of the
@@ -34,7 +102,7 @@
   </div>
 </section>
 <section>
-  <h3>Glossary</h3>
+  <h3><a id="glossary">Glossary</a></h3>
   <dl>
     <dt>Fair Data</dt>
     <dd>
@@ -64,7 +132,7 @@
   </dl>
 </section>
 <section>
-  <h2 id="setup">Setup</h2>
+  <h2 id="setup"><a id="setup">Setup</a></h2>
   Before we begin building our Todo app interactively, we need to make sure we have
   all the tools and environment set up to run this interactive tutorial locally.
   <dl>
@@ -112,7 +180,7 @@
   </dl>
 </section>
 <section>
-  <h2>10. Next Steps:</h2>
+  <h2><a id="next1">Next Steps:</a></h2>
   <div class="notice">
     <a href="fdp.svg" target="_blank"
   ><img alt="Fair Data Protocol" src="fdp.svg" /></a
@@ -125,19 +193,13 @@
       <li><a href="#/building-a-todo-dapp/fairos">Option 2: Using FairOS REST API endpoints</a></li>
     </ul>
     <br>
-    <a href="#/building-a-todo-dapp/fdp-storage" role="button"
+    <a class:hide={$singlePageMode} href="#/building-a-todo-dapp/fdp-storage" role="button"
   >Option 1: Using FdpStorage & Blossom</a
   >
   </div>
 </section>
-<script lang="ts">
-  import { onMount } from "svelte";
-  import { writable } from "svelte/store";
-  import { scrollPageToTop } from "../../lib/utils";
-
-  let url = writable("");
-  onMount(()=>{
-    $url = window.location.origin;
-    scrollPageToTop();
-  })
-</script>
+{#if $singlePageMode}
+<PageFdpStorage/>
+<PageFairOs/>
+<PageResources/>
+{/if}

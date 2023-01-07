@@ -17,7 +17,7 @@
 </script>
 
 <section>
-  <h2>8. Deleting a todo:</h2>
+  <h2 id="f8">8. Deleting a todo:</h2>
   <Code source={updateTodoCode} />
   {#if $steps[7] && $todoItems.length}
     <table class="notice">

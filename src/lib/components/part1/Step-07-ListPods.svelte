@@ -16,7 +16,7 @@
 </script>
 
 <section>
-  <h2>4. List existing pods:</h2>
+  <h2 id="f4">4. List all pods:</h2>
   <Code source={listPodsCode} />
   {#if $pods}
     <dl class="notice">

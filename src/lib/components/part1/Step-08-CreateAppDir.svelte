@@ -17,7 +17,7 @@
 </script>
 
 <section>
-  <h2>5. Create a directory:</h2>
+  <h2 id="f5">5. Create a directory:</h2>
   This<code class="in">{config.todoItemsDirectory}</code> directory inside the
   <code class="in">{config.todoAppNamespace}</code>
   pod will hold each of our todo items as individual files.

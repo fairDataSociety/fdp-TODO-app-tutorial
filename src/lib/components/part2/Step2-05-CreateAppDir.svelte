@@ -73,7 +73,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>5. Create App Directory</h2>
+  <h2 id="s5">5. Create App Directory</h2>
   <code>POST v1/dir/mkdir : Create directory</code>
   <Code source={code} />
   {#if error}

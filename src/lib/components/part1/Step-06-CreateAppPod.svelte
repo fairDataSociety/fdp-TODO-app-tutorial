@@ -17,7 +17,7 @@
 </script>
 
 <section>
-  <h2>3. Create app pod:</h2>
+  <h2 id="f3">3. Create app pod:</h2>
   This<code class="in">{config.todoAppNamespace}</code> pod will serve as the
   namespace for our Todo app.
   <Code source={createAppPodCode} />

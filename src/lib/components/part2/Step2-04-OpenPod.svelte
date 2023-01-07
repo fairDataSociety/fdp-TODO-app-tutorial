@@ -71,7 +71,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>4. Open App Pod</h2>
+  <h2 id="s4">4. Open App Pod</h2>
   <code>POST v1/pod/open : Open pod</code>
   <Code source={code} />
   {#if error}

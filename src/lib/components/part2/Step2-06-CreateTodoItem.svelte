@@ -95,7 +95,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>6. Create Todo Item (as a file)</h2>
+  <h2 id="s6">6. Create a Todo Item (as a file)</h2>
   <code>POST v1/file/upload : Upload a file</code>
   <Code source={code} />
   {#if error}

@@ -3,10 +3,12 @@
     isBeeRunning,
     isLocalSetup,
     next,
+    singlePageMode,
     steps,
     TutorialMode,
     tutorialMode,
   } from "../../store";
+
   import { scrollToBottom } from "../../utils";
 
   const startInteractiveTutorial = () => {
@@ -15,6 +17,7 @@
     $next = {};
     scrollToBottom();
   };
+
   const showFullTutorial = () => {
     $tutorialMode = TutorialMode.FDP_NON_INTERACTIVE;
     [...Array(11).keys(), 1.1, 2.1].map((i) => {
@@ -28,8 +31,10 @@
   <strong>A Quick Checklist:</strong>
   <ul>
     <li>
-      {#if $isLocalSetup}✅{:else}❌{/if} This page is being served locally at 
-      <a href="http://{window.location.href.split("/")[2]}">http://{window.location.href.split("/")[2]}</a>
+      {#if $isLocalSetup}✅{:else}❌{/if} This page is being served locally at
+      <a href="http://{window.location.href.split('/')[2]}"
+        >http://{window.location.href.split("/")[2]}</a
+      >
     </li>
     <li>
       {#if $isBeeRunning}✅{:else}❌{/if} Local bee node is running at
@@ -49,39 +54,41 @@
     <dd>
       <ol>
         <li>
-          Create an FdpStorage Instance
-          <ul><li>List accounts and balances</li></ul>
+          <a href="#f1">Create an FdpStorage Instance</a>
+          <ul><li><a href="#f1_1">List accounts and balances</a></li></ul>
         </li>
-        <li>
-          Create a local FDP Lite Account
-          <ul><li>Save mnemonic phrase</li></ul>
+        <li><a href="#f2">Create a local FDP Lite Account</a>
         </li>
-        <li>Create app pod</li>
-        <li>List all pods</li>
-        <li>Create a directory</li>
-        <li>Create a todo item (as a file)</li>
-        <li>List all todo items</li>
-        <li>Deleting a todo</li>
-        <li>Importing an account</li>
-        <li>Registering an account on-chain</li>
-        <li>Using Blossom</li>
-        <li>Next: Using FairOS</li>
+        <li><a href="#f3">Create app pod</a></li>
+        <li><a href="#f4">List all pods</a></li>
+        <li><a href="#f5">Create a directory</a></li>
+        <li><a href="#f6">Create a todo item (as a file)</a></li>
+        <li><a href="#f7">List all todo items</a></li>
+        <li><a href="#f8">Deleting a todo</a></li>
+        <li><a href="#f9">Importing an account</a></li>
+        <li><a href="#f10">Registering an account on-chain</a></li>
+        <li><a href="#f11">Using Blossom</a></li>
+        <li><a href="#f12">Next: Using FairOS</a></li>
       </ol>
     </dd>
     <dt>Create FDS portable account:</dt>
-    <dd><a href="fdpstorage.svg" target="_blank"
-      ><img alt="FdpStorage" src="fdpstorage.svg" /></a
-    ></dd>
-    <dl>
+    <dd>
+      <a href="fdpstorage.svg" target="_blank"
+        ><img alt="FdpStorage" src="fdpstorage.svg" /></a
+      >
+    </dd>
+    <dl />
+    <p class:hide={$singlePageMode}>
+    <button
+      on:click={() => startInteractiveTutorial()}
+      disabled={$tutorialMode == TutorialMode.FDP_INTERACTIVE}
+      >Start Interactive Tutorial</button
+    >
+    or
+    <button
+      disabled={$tutorialMode == TutorialMode.FDP_NON_INTERACTIVE}
+      on:click={showFullTutorial}>Show the full guide</button
+    >
+  </p>
   </dl>
-  <button
-    on:click={() => startInteractiveTutorial()}
-    disabled={$tutorialMode == TutorialMode.FDP_INTERACTIVE}
-    >Start Interactive Tutorial</button
-  >
-  or
-  <button
-    disabled={$tutorialMode == TutorialMode.FDP_NON_INTERACTIVE}
-    on:click={showFullTutorial}>Show the full guide</button
-  >
 </div>

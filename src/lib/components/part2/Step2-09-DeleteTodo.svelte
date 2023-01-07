@@ -128,7 +128,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>9. Delete Todo</h2>
+  <h2 id="s9">9. Delete Todo</h2>
   <code>DELETE v1/file/delete : Delete a file</code>
   <Code source={code} />
   {#if error}

@@ -77,7 +77,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>8. Read Todo Item</h2>
+  <h2 id="s8">8. Read Todo Item</h2>
   <code>POST v1/file/download : Download a file</code>
   <Code source={code} />
   {#if error}

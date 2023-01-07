@@ -13,7 +13,7 @@
 		
 		[IMPORT local account]-&gt;[&lt;database&gt;Lite Account|⬤ wallet|✅ Local|❌ Portable]
 		[Lite Account]-&gt;[REGISTER Account|✅ On-Chain|🡲 userName|🡲 password|🡲 wallet.mnemonic.phrase]
-		[REGISTER Account]-&gt;[&lt;box&gt;TOP-UP account|🡲 wallet.address|+ 0.1 GETH]
+		[REGISTER Account]-&gt;[&lt;box&gt;TOP-UP account|🡲 wallet.address|+ 0.05 GETH]
 		
 		[TOP-UP account]-&gt;[&lt;database&gt;FDS Account|✅ Portable]
 		[FdpStorage]-&gt;[FDS Login|🡲 userName|🡲 password]

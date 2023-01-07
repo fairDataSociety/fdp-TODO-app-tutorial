@@ -28,7 +28,7 @@ console.log({fdp});
 
 {#if $tutorialMode != TutorialMode.UNDEFINED}
   <section>
-    <h2 id="p1">1. Create an FdpStorage Instance</h2>
+    <h2 id="f1">1. Create an FdpStorage Instance</h2>
     <dl>
       <dt>
         Install <a

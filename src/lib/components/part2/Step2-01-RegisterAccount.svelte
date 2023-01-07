@@ -97,7 +97,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>1. Register an account on-chain</h2>
+  <h2 id="s1">1. Register an account on-chain</h2>
   <p>Registering an account on-chain makes it portable.</p>
   <code>POST v2/user/signup : Register New User</code>
   <Code source={code} />

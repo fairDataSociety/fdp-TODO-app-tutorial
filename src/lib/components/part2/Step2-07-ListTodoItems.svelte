@@ -83,7 +83,7 @@ if(response.ok){
 </script>
 
 <section>
-  <h2>7. List Todo Files</h2>
+  <h2 id="s7">7. List Todo Files</h2>
   <code>GET v1/dir/ls : List directory</code>
   <Code source={code} />
   {#if error}
