@@ -23,7 +23,7 @@
 </script>
 
 <section>
-  <h2 id="f6">6. Create a todo item (as a file):</h2>
+  <h2 id="f6">6. Create a todo item:</h2>
   <Code source={createTodoItemCode} />
   {#if $newTodo}
     <ul class="notice">

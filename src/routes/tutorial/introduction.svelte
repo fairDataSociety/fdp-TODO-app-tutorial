@@ -4,68 +4,43 @@
   import PageFairOs from "../../lib/components/Page_FairOS.svelte";
   import PageFdpStorage from "../../lib/components/Page_FdpStorage.svelte";
   import PageResources from "../../lib/components/Page_Resources.svelte";
+  import TocFairos from "../../lib/components/TocFairos.svelte";
+  import TocFdpStorage from "../../lib/components/TocFdpStorage.svelte";
   import { singlePageMode } from "../../lib/store";
   import { scrollPageToTop } from "../../lib/utils";
 
   let url = writable("");
-  onMount(()=>{
+  onMount(() => {
     $url = window.location.origin;
     scrollPageToTop();
-  })
+  });
 </script>
+
 <h1>Getting Started with FDP</h1>
 {#if $singlePageMode}
-<div class="notice">
-  <ul>
-    <li><a href="/">Getting Started with FDP</a>
-      <ul>
-        <li><a href="#glossary">Glossary</a></li>
-        <li><a href="#setup">Setup</a></li>
-        <li><a href="#next1">Next steps</a></li>
-      </ul>
-    </li>
-    <li><a href="#fdpstorage">Option 1: Using FdpStorage & Blossom</a>
-      <ol>
-        <li>
-          <a href="#f1">Create an FdpStorage Instance</a>
-          <ul><li><a href="#f1_1">List accounts and balances</a></li></ul>
-        </li>
-        <li><a href="#f2">Create a local FDP Lite Account</a>
-        </li>
-        <li><a href="#f3">Create app pod</a></li>
-        <li><a href="#f4">List all pods</a></li>
-        <li><a href="#f5">Create a directory</a></li>
-        <li><a href="#f6">Create a todo item (as a file)</a></li>
-        <li><a href="#f7">List all todo items</a></li>
-        <li><a href="#f8">Deleting a todo</a></li>
-        <li><a href="#f9">Importing an account</a></li>
-        <li><a href="#f10">Registering an account on-chain</a></li>
-        <li><a href="#f11">Using Blossom</a></li>
-        <li><a href="#f12">Next: Using FairOS</a></li>
-      </ol>
-    </li>
-    <li><a href="#fairos">Option 2: Using FairOS</a>
-      <ol>
-        <li><a href="#s1">Register an account on-chain</a> <code>v2/user/signup</code>
-        </li>
-        <li><a href="#s2">Login to a portable account</a> <code>v2/user/login</code>
-        </li>
-        <li><a href="#s3">Create App Pod</a> <code>v1/pod/new</code></li>
-        <li><a href="#s4">Open App Pod</a> <code>v1/pod/open</code></li>
-        <li><a href="#s5">Create App Directory</a> <code>v1/dir/mkdir</code></li>
-        <li><a href="#s6">Create a todo item (as a file)</a> <code>v1/file/upload</code></li>
-        <li><a href="#s7">List Todo Files</a> <code>v1/dir/ls</code></li>
-        <li><a href="#s8">Read Todo Item</a> <code>v1/file/download</code></li>
-        <li><a href="#s9">Delete Todo</a> <code>v1/file/delete</code></li>
-        <li><a href="#s10">All FairOS Endpoints</a></li>
-        <li><a href="#s11">Next Steps: Additonal Resources</a></li>
-      </ol>
-    </li>
-    <li>
-      <a href="#resources">Resource & Links</a>
-    </li>
-  </ul>
-</div>
+  <div class="notice">
+    <ul>
+      <li>
+        <a href="/">Getting Started with FDP</a>
+        <ul>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#setup">Setup</a></li>
+          <li><a href="#next1">Next steps</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#fdpstorage">Option 1: Using FdpStorage & Blossom</a>
+        <TocFdpStorage></TocFdpStorage>
+      </li>
+      <li>
+        <a href="#fairos">Option 2: Using FairOS</a>
+        <TocFairos></TocFairos>
+      </li>
+      <li>
+        <a href="#resources">Resource & Links</a>
+      </li>
+    </ul>
+  </div>
 {/if}
 <section>
   <p>
@@ -173,9 +148,7 @@
     <dd><pre>npm run dev</pre></dd>
     <dt>Open the tutorial app</dt>
     <dd>
-      Visit the link - <a href={$url}
-        >{$url}</a
-      >
+      Visit the link - <a href={$url}>{$url}</a>
     </dd>
   </dl>
 </section>
@@ -183,23 +156,39 @@
   <h2><a id="next1">Next Steps:</a></h2>
   <div class="notice">
     <a href="fdp.svg" target="_blank"
-  ><img alt="Fair Data Protocol" src="fdp.svg" /></a
->
+      ><img alt="Fair Data Protocol" src="fdp.svg" /></a
+    >
     <p>
-      In the next chapters, we will cover two different ways to build with Fair Data Protocol.
+      In the next chapters, we will cover two different ways to build with Fair
+      Data Protocol.
     </p>
     <ul>
-      <li><a href="#/building-a-todo-dapp/fdp-storage">Option 1: Using FdpStorage & Blossom</a></li>
-      <li><a href="#/building-a-todo-dapp/fairos">Option 2: Using FairOS REST API endpoints</a></li>
+      {#if $singlePageMode}
+        <li><a href="#fdpstorage">Option 1: Using FdpStorage & Blossom</a></li>
+        <li><a href="#fairos">Option 2: Using FairOS REST API endpoints</a></li>
+      {:else}
+        <li>
+          <a href="#/building-a-todo-dapp/fdp-storage"
+            >Option 1: Using FdpStorage & Blossom</a
+          >
+        </li>
+        <li>
+          <a href="#/building-a-todo-dapp/fairos"
+            >Option 2: Using FairOS REST API endpoints</a
+          >
+        </li>
+      {/if}
     </ul>
-    <br>
-    <a class:hide={$singlePageMode} href="#/building-a-todo-dapp/fdp-storage" role="button"
-  >Option 1: Using FdpStorage & Blossom</a
-  >
+    <br />
+    <a
+      class:hide={$singlePageMode}
+      href="#/building-a-todo-dapp/fdp-storage"
+      role="button">Option 1: Using FdpStorage & Blossom</a
+    >
   </div>
 </section>
 {#if $singlePageMode}
-<PageFdpStorage/>
-<PageFairOs/>
-<PageResources/>
+  <PageFdpStorage />
+  <PageFairOs />
+  <PageResources />
 {/if}

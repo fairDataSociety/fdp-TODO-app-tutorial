@@ -49,7 +49,9 @@
     requirements and steps mentioned in the previous <b>Setup</b> section have all
     been fulfilled.
   </p>
+  
   <dl>
+    {#if $singlePageMode}
     <dt>Steps:</dt>
     <dd>
       <ol>
@@ -71,6 +73,7 @@
         <li><a href="#f12">Next: Using FairOS</a></li>
       </ol>
     </dd>
+    {/if}
     <dt>Create FDS portable account:</dt>
     <dd>
       <a href="fdpstorage.svg" target="_blank"
