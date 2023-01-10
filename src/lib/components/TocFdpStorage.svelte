@@ -7,7 +7,7 @@
   <li><a href="#f3">Create app pod</a></li>
   <li><a href="#f4">List all pods</a></li>
   <li><a href="#f5">Create a directory</a></li>
-  <li><a href="#f6">Create a todo item</a></li>
+  <li><a href="#f6">Create a todo item (as a file)</a></li>
   <li><a href="#f7">List all todo items</a></li>
   <li><a href="#f8">Deleting a todo</a></li>
   <li><a href="#f9">Importing an account</a></li>
