@@ -148,7 +148,7 @@
     <dd><pre>npm run dev</pre></dd>
     <dt>Open the tutorial app</dt>
     <dd>
-      Visit the link - <a href={$url}>{$url}</a>
+      Visit the link - <a href="http://localhost:5173/">http://localhost:5173/</a>
     </dd>
   </dl>
 </section>
